@@ -1,4 +1,3 @@
-
 const navbutton = document.querySelector('#ham-btn');
 const navlinks = document.querySelector('#nav-bar');
 
@@ -7,7 +6,7 @@ navbutton.addEventListener('click', () => {
   navlinks.classList.toggle('show');
 });
 
-
+// ---------- DATE & LAST MODIFIED ----------
 const currentYearSpan = document.getElementById("currentYear");
 if (currentYearSpan) {
   currentYearSpan.textContent = new Date().getFullYear();
@@ -18,82 +17,65 @@ if (lastModifiedP) {
   lastModifiedP.textContent = `Last Modification: ${document.lastModified}`;
 }
 
-
-// Select filter buttons
+// ---------- COURSE FILTER ----------
 const allBtn = document.getElementById("all");
 const cseBtn = document.getElementById("cse");
 const wddBtn = document.getElementById("wdd");
 const filterButtons = [allBtn, cseBtn, wddBtn];
 
-// Select course items (all <li> except the filter buttons)
-const courses = document.querySelectorAll(".course-list li:not(#all):not(#cse):not(#wdd)");
+// Select only course items (not the filter buttons)
+const courses = document.querySelectorAll(".course-list li");
 
-// Select credit total display
+// for the active button
+function setActiveButton(buttonId) {
+  filterButtons.forEach(btn => btn.classList.remove("active")); // remove from all
+    const btn = document.getElementById(buttonId);
+    if (btn) btn.classList.add("active"); // add to clicked
+}
+
+
+
+// Optional: total credits display
 const creditDisplay = document.getElementById("credit-total");
 
-// Main function to filter courses
-function filterCourses(category) {
-  // Highlight active filter button
+// List of completed courses
+const takenCourses = ["WDD130", "CSE210", "WDD131", "CSE110", "CSE111"];
+
+// ---------- MAIN FILTER FUNCTION ----------
+function filterCourses(category, triggeredByClick = false) {
+  // Highlight active button
   filterButtons.forEach(btn => btn.classList.remove("active"));
-  document.getElementById(category.toLowerCase()).classList.add("active");
+document.getElementById(category.toLowerCase()).classList.add("active");
 
   let totalCredits = 0;
 
-  // Show/hide courses + calculate credits
   courses.forEach(course => {
     const credits = parseInt(course.dataset.credits) || 0;
+
+    // Hide all first
+    course.style.display = "none";
+    course.classList.remove("completed");
+
     if (category === "ALL" || course.classList.contains(category)) {
       course.style.display = "block";
       totalCredits += credits;
-    } else {
-      course.style.display = "none";
+
+      // Only add checkmark and function was triggered by a button click
+  if (triggeredByClick && takenCourses.includes(course.textContent.trim())) {
+        course.classList.add("completed");
+      }
     }
   });
 
-  
   if (creditDisplay) {
     creditDisplay.textContent = totalCredits;
   }
 }
 
-// Add click events for filter buttons
-allBtn.addEventListener("click", () => filterCourses("ALL"));
-cseBtn.addEventListener("click", () => filterCourses("CSE"));
-wddBtn.addEventListener("click", () => filterCourses("WDD"));
+// ---------- EVENT LISTENERS -------
+allBtn.addEventListener("click", () => filterCourses("ALL", true));
+cseBtn.addEventListener("click", () => filterCourses("CSE", true));
+wddBtn.addEventListener("click", () => filterCourses("WDD", true));
 
-
-filterCourses("ALL");
-
-document.addEventListener("DOMContentLoaded", () => {
-
-    // List of taken courses
-    const takenCourses = ["WDD130", "CSE210", "WDD131", "CSE110", "CSE111"];
-    
-    // Select all filter buttons
-    const filterButtons = document.querySelectorAll(".course-items li[id]");
-    
-    filterButtons.forEach(button => {
-        button.addEventListener("click", () => {
-            const filter = button.id;
-            const courses = document.querySelectorAll(".course-items li[data-credits]");
-
-            courses.forEach(course => {
-                // Reset check 
-                course.innerHTML = course.textContent;
-
-                // Show or hide based 
-                if(filter === "all" || course.classList.contains(filter.toUpperCase())) {
-                    course.style.display = "list-item";
-
-                    // Add check mark if is taken
-                    if(takenCourses.includes(course.textContent)) {
-                        course.innerHTML += " ☑️"; // append a check 
-                    }
-                } else {
-                    course.style.display = "none";
-                }
-            });
-        });
-    });
-});
-
+// Default: show all WITHOUT checkmarkss
+filterCourses("ALL", false);

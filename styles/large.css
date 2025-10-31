@@ -76,10 +76,10 @@ font-size: larger;
 }
 
 .personal {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 20px;
-    
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  margin-bottom: 40px; 
 }
 
 .personal h2 {
@@ -92,20 +92,13 @@ font-size: larger;
 .about-me{
   background:var(--accent2);
   padding-right: 0;
-  height: 300px;
+  height: auto;
   margin-left: 10px;
 }
 
-.about-me h2 {
-   text-align: center;
-    margin-bottom: 10px;
-    background: var(--primary-color);
-    color: var(--background-color);
-    padding-bottom: 10px;
-    padding-top: 10px;
-}
 
 .about-me p {
+  display: block;
     font-size: 1.2rem;
     line-height: 1.6;
     color: var(--background-color);
@@ -137,46 +130,64 @@ font-size: larger;
     height: auto;
     display: block;
     margin: 0 auto;
+    padding-top: 15px;
     align-items: center;
 }
 
 
 /* web certificate */
-.course-list {
-    background: var(--background-color);
-    padding: 10px;
-   
-} 
-
-.course-list h2 {
-  
-    font-size: 2rem;
-    background: var(--primary-color);
-    color: var(--background-color);
-    align-items: center;
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-.course  {
+.courses  {
     align-items: center;
     margin-left: 0;
     margin-right: 0;
-    
+    margin-top: 30px;    
 }
 
-.course-list ul {
+
+.course-list {
+    background: var(--background-color);
+       
+} 
+
+
+
+
+.course-head ul {
   display: grid;
   grid-template-columns: repeat(3, 1fr);  
   justify-content: center;  
- gap: 30px;
+  gap: 30px;
   list-style-type: none;
   font-size: 1.2rem;
   line-height: 1.6;
   color: var(--primary-color);
   padding-right: 20px;
   margin: 0;
+  padding-bottom: 20px;
+}
+
+
+.course-head li {
+    background: var(--accent2);
+    padding: 10px;
+    border: solid 2px var(--secondary);
+    text-align: center;
+    margin-left: -10px;    
+}
+ 
+
+.course-list ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  justify-content: center;  
+  gap: 30px;
+  list-style-type: none;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: var(--primary-color);
+  padding-right: 20px;
+  margin: 0;
+  padding-bottom: 20px;
 }
 
 .course-list li {
@@ -184,10 +195,44 @@ font-size: larger;
     padding: 10px;
     border: solid 2px var(--secondary);
     text-align: center;
-    margin-left: -10px;
-    
+    margin-left: -10px;    
 }
- 
+
+.category li.active {
+    background: var(--primary-color);
+    color: var(--background-color);
+    font-weight: bold;
+    border: 2px solid var(--secondary);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -302,7 +347,7 @@ font-size: larger;
   font-size: 5vw;
 }
 
-
+/* ABOUT ME */
 .about {
   display: flex;
   flex-direction: column;  
@@ -323,6 +368,7 @@ font-size: larger;
   line-height: 1.6;
   margin: 0;  
   margin-top: 0.5rem; 
+  height: auto;
 }
 
 
@@ -350,4 +396,4 @@ font-size: larger;
 }
 
 }
-
+ 
