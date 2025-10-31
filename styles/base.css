@@ -150,7 +150,7 @@ text-align: center;
 .about-me{
 background:var(--accent2);
 padding-right: 0;
-height: 300px;
+height: auto;
 }
 
 .about-me h2 {
