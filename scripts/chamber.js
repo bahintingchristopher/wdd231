@@ -1,6 +1,4 @@
-// -----------------------------
-// 🧭 Toggle nav menu
-// -----------------------------
+
 const navbutton = document.querySelector('#ham-btn');
 const navlinks = document.querySelector('#nav-bar');
 
@@ -9,25 +7,17 @@ navbutton.addEventListener('click', () => {
   navlinks.classList.toggle('show');
 });
 
-// -----------------------------
-// 📅 Display current year
-// -----------------------------
+
 const currentYearSpan = document.getElementById("currentYear");
 if (currentYearSpan) {
   currentYearSpan.textContent = new Date().getFullYear();
 }
 
-// -----------------------------
-// 🕒 Display last modified date
-// -----------------------------
 const lastModifiedP = document.getElementById("lastModified");
 if (lastModifiedP) {
   lastModifiedP.textContent = `Last Modification: ${document.lastModified}`;
 }
 
-// -----------------------------
-// 🎓 Course filtering + credits
-// -----------------------------
 
 // Select filter buttons
 const allBtn = document.getElementById("all");
@@ -60,7 +50,7 @@ function filterCourses(category) {
     }
   });
 
-  // Update total credits
+  
   if (creditDisplay) {
     creditDisplay.textContent = totalCredits;
   }
@@ -71,5 +61,39 @@ allBtn.addEventListener("click", () => filterCourses("ALL"));
 cseBtn.addEventListener("click", () => filterCourses("CSE"));
 wddBtn.addEventListener("click", () => filterCourses("WDD"));
 
-// Default view (show all on load)
+
 filterCourses("ALL");
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    // List of taken courses
+    const takenCourses = ["WDD130", "CSE210", "WDD131", "CSE110", "CSE111"];
+    
+    // Select all filter buttons
+    const filterButtons = document.querySelectorAll(".course-items li[id]");
+    
+    filterButtons.forEach(button => {
+        button.addEventListener("click", () => {
+            const filter = button.id;
+            const courses = document.querySelectorAll(".course-items li[data-credits]");
+
+            courses.forEach(course => {
+                // Reset check 
+                course.innerHTML = course.textContent;
+
+                // Show or hide based 
+                if(filter === "all" || course.classList.contains(filter.toUpperCase())) {
+                    course.style.display = "list-item";
+
+                    // Add check mark if is taken
+                    if(takenCourses.includes(course.textContent)) {
+                        course.innerHTML += " ☑️"; // append a check 
+                    }
+                } else {
+                    course.style.display = "none";
+                }
+            });
+        });
+    });
+});
+
