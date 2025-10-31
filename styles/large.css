@@ -8,6 +8,16 @@
   --font-headings: 'Lato', sans-serif;
 }
 
+h1, h2, h3, h4, h5, h6 {
+font-family: var(--font-headings);
+color: var(--primary-color);
+}
+
+p, li, a, span, div {
+font-family: var(--font-body);
+color: var(--primary-color);
+
+}
 
 @media only screen and (min-width:38rem) {
 header, main, nav, footer {
