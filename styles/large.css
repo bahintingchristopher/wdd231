@@ -1,0 +1,343 @@
+:root {
+  --background-color: #B9D6F2;
+  --primary-color: #061A40;
+  --hover: #0353A4 ;
+  --secondary: #003559;
+  --accent2: #006DAA ;  
+  --font-body: 'Roboto', sans-serif;
+  --font-headings: 'Lato', sans-serif;
+}
+
+
+@media only screen and (min-width:38rem) {
+header, main, nav, footer {
+    max-width: 100%; 
+    margin: 0 auto;
+}
+
+
+
+header {
+grid-template-columns: 48px auto;
+border-bottom:  solid 2px var(--secondary);
+}
+
+header span {
+    font-size: 1.5rem;
+    font-family: var(--font-headings);
+}
+
+
+
+.hamburger {
+display: none;
+}
+
+
+.navigation{
+display: block;
+
+}
+
+.navigation ul {
+display: flex;  
+/* justify-content: space-evenly; */
+border-bottom:  solid 2px var(--secondary);  
+background: var(--primary-color);
+padding-top: 20px;
+padding-bottom: 20px;
+}
+
+.navigation a{
+display: flex;
+border: none;
+color: var(--background-color);
+font-size: larger;
+}
+
+
+/* STUDENT HOME PAGE */
+
+.home {
+    font-size: 1.5rem;
+    text-align: left;
+   padding-top: 10px;
+
+}
+
+.personal {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    
+}
+
+.personal h2 {
+    font-size: 2rem;
+    margin-top: 0;
+    align-items: center;
+    text-align: center;
+}
+
+.about-me{
+  background:var(--accent2);
+  padding-right: 0;
+  height: 300px;
+  margin-left: 10px;
+}
+
+.about-me h2 {
+   text-align: center;
+    margin-bottom: 10px;
+    background: var(--primary-color);
+    color: var(--background-color);
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.about-me p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: var(--background-color);
+    padding: 10px;
+    text-align: justify;
+    padding-bottom: 10px;
+}
+
+.student-photo {
+    border: solid 2px var(--secondary);
+    padding-right: 0;
+    margin-right: 10px;
+}
+
+
+.student-photo h2 {
+    text-align: center;
+     font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 10px;
+    background: var(--primary-color);
+    color: var(--background-color);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.student-photo img {
+    width: 220px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    align-items: center;
+}
+
+
+/* web certificate */
+.course-list {
+    background: var(--background-color);
+    padding: 10px;
+   
+} 
+
+.course-list h2 {
+  
+    font-size: 2rem;
+    background: var(--primary-color);
+    color: var(--background-color);
+    align-items: center;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.course  {
+    align-items: center;
+    margin-left: 0;
+    margin-right: 0;
+    
+}
+
+.course-list ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);  
+  justify-content: center;  
+ gap: 30px;
+  list-style-type: none;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: var(--primary-color);
+  padding-right: 20px;
+  margin: 0;
+}
+
+.course-list li {
+    background: var(--accent2);
+    padding: 10px;
+    border: solid 2px var(--secondary);
+    text-align: center;
+    margin-left: -10px;
+    
+}
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CHAMBER OF COMMERCE */
+/* ----------MAIN---------- */
+.empowering-vismin {
+  display: grid;  
+  grid-template-columns: 2fr 1fr;               
+  align-items: center;           
+  gap: 10px;                      
+  padding-bottom: 10px;      
+}
+
+.empowering-vismin .hero {
+  margin-right: 10px;           
+}
+
+.hero img {
+  max-width: 99%;
+  height: auto;
+  display: block;
+  padding-top: 10px;
+
+ 
+}
+
+
+
+.hero h1 {
+  font-size: 5vw;
+}
+
+
+.about {
+  display: flex;
+  flex-direction: column;  
+  justify-content: center;  
+  gap: 0.5rem;  
+  padding: 0 1rem;
+}
+
+.about h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 1.8rem;
+  margin: 0;  
+}
+
+.about p {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  margin: 0;  
+  margin-top: 0.5rem; 
+}
+
+
+.mission-vision {
+  display: grid;  
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+
+
+
+.facilities {
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.facilities ul{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-left: 0;
+}
+
+}
+
