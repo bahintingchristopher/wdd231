@@ -265,7 +265,7 @@ padding-bottom: 10px;
 
 
 .completed {
-  background-color: #c8f7c5; 
+  background-color: var(--background-color); 
   position: relative;
 }
 
