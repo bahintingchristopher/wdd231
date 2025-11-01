@@ -192,8 +192,9 @@ padding-bottom: 10px;
 }
 
 
-
-
+.courses .course-list h2 {
+  display: none;
+}
 
 .courses h2 {
 font-size: 2rem;
