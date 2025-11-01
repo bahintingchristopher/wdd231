@@ -14,14 +14,16 @@ font-family: var(--font-headings);
 color: var(--primary-color);
 }
 
-p, li, a, span, div {
+p, li, a, span, div, button, section {
 font-family: var(--font-body);
 color: var(--primary-color);
-
 }
 
-main {
+
+
+html, body {
 background: var(--background-color);
+font-family: var(--font-body);
 }
 
 header {
