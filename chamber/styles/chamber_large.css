@@ -25,7 +25,15 @@ header, main, nav, footer {
     margin: 0 auto;
 }
 
-
+.footer {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+align-items: center;
+justify-content: center;
+text-align: center;
+gap: 20px;
+border-top: solid 5px var(--primary-color);
+}
 
 header {
 grid-template-columns: 48px auto;
