@@ -44,39 +44,49 @@
     </nav>
 
     <main>
-        <div class="home">
-            <h1>Directory</h1>
-        </div>
+         <h1>Directory</h1>
+  <div class="view-toggle">
+    <button id="grid-view-btn" class="active">
+        <img src="images/grid.svg" alt="Grid View Icon">
+    </button>
+    
+    <button id="list-view-btn">
+        <img src="images/list.svg" alt="List View Icon">
+    </button> 
+</div>
+
+  <div id="members" class="grid"></div>
 
     </main>
 
-    <script src="scripts/chamber.js" defer></script>
+    <!-- <script src="scripts/chamber.js" defer></script> -->
+    <script src="scripts/directory.js" defer></script>
 
 
     <footer>
         <div class="footer">
-        <section class="address">
+        <div class="address">
             <h2>HEAD OFFICE</h2>
             <p>128 Riverside,<br>
             Poblacion, Kananga<br>
             Leyte, Philippines<br>
             Contact No.: 0912.875.1487</p>
-        </section>
+            </div>
 
-        <section class="social">
+        <div class="social">
              <a href="https://github.com/bahintingchristopher/wdd231"  target="_blank"><img src="images/github.svg" alt="github"   width="16"  height="16"></a>
             <a href="www.linkedin.com/in/cbahinting"  target="_blank"><img src="images/linkedin.svg" alt="linkedin"   width="16"  height="16"></a>
             <a href="https://www.facebook.com/profile.php?id=61579616556378"  target="_blank"><img src="images/facebook.svg" alt="facebook"   width="16"  height="16"></a>
             <a href="https://x.com/"  target="_blank"><img src="images/twitter-x.svg" alt="twitter-x" width="16"  height="16"></a>
-        </section>
+        </div>
 
-        <section class="author">
+        <div class="author">
         <h2>WDD231 Class Project</h2>
         <p> Christopher T. Bahinting <br>
         &copy; <span id="currentYear"></span>  | Philippines
         </p>
         <p id="lastModified"></p>
-        </section>
+    </div>
         </div>
         
 
