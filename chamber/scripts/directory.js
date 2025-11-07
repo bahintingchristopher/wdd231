@@ -44,29 +44,30 @@ if (lastModifiedP) {
         }
     }
 
-    
     function displayMembers(members) {
-        membersContainer.innerHTML = "";
-        
-        members.forEach(member => {
-            const card = document.createElement("div");
-            card.classList.add("member-card");
+    membersContainer.innerHTML = "";
+    
+    const membershipNames = {1: "Member", 2: "Silver", 3: "Gold"};
 
-           
-            card.innerHTML = `
-                <img src="${member.image}" alt="${member.name} logo" loading="lazy" width="150" height="100">
-                <div class="member-info">
-                        <span class="name">${member.name}</span>
-                        <span class="address">${member.address}</span>
-                        <span class="phone">${member.phone}</span>
-                        <span class="website"><a href="${member.website}" target="_blank">Website</a></span>
-                        <span class="other-info">${member.other_info}</span>
-                </div>
-            `;
+    members.forEach(member => {
+        const card = document.createElement("div");
+        card.classList.add("member-card");
 
-            membersContainer.appendChild(card);
-       });
-    }
+        card.innerHTML = `
+            <img src="${member.image}" alt="${member.name} logo" loading="lazy" width="150" height="100">
+            <div class="member-info">
+                <span class="name">${member.name}</span>
+                <span class="address">${member.address}</span>
+                <span class="phone">${member.phone}</span>
+                <span class="website"><a href="${member.website}" target="_blank">Website</a></span>
+                <span class="membership-level">Membership Level: ${membershipNames[member.membership_level]}</span>
+                <span class="other-info">${member.other_info}</span>
+            </div>
+        `;
+
+        membersContainer.appendChild(card);
+    });
+}
 
    
 
