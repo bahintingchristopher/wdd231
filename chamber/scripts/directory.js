@@ -54,7 +54,7 @@ if (lastModifiedP) {
         card.classList.add("member-card");
 
         card.innerHTML = `
-            <img src="${member.image}" alt="${member.name} logo" loading="lazy" width="150" height="100">
+            <img src="${member.image}" alt="${member.name} logo" width="150" height="100">
             <div class="member-info">
                 <span class="name">${member.name}</span>
                 <span class="address">${member.address}</span>

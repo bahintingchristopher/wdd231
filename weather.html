@@ -1,0 +1,44 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+
+    <link rel="stylesheet" href="styles/weather.css">
+
+
+</head>
+<body>
+<h1>OpenWeatherMap.org API Test</h1>
+<main>
+ 
+  <figure id="weather-container">
+    <h2>PHILIPPINES</h2>
+  <figcaption></figcaption>
+  <img id="weather-icon" src="" alt="">
+  
+   <p>Temperature <span id="current-temp"></span></p>
+  <p>Wind: <span id="current-wind"></span></p>
+  <p>Humidity: <span id="current-humidity"></span></p>
+</figure>
+
+<!-- i am expirementing to add the 7 day forecast -->
+ <section id="forecast-container">
+  <h3>3-Day Forecast</h3>
+  <div id="forecast"></div> <!-- Forecast items will go here -->
+</section>
+
+
+</main>
+
+
+
+<script src="scripts/weather.js" defer></script>
+
+<footer>
+  Christopher T. Bahinting | OpenWeatherMap.org | CC BY-SA 4.0
+</footer>
+    
+</body>
+</html> 

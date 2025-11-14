@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <meta name="author" content="Christopher T. Bahinting"> 
-    <meta name="description" content="WDD 231 - Chamber Directory Page by  Christopher T. Bahinting.">
-    <title> Chamber Directory Page</title>
+    <meta name="description" content="WDD 231 - Chamber Home Page by  Christopher T. Bahinting.">
+    <title> Chamber Home Page</title>
 
     <meta property="og:title" content="Kananga Chamber of Commerce">
     <meta property="og:description" content="Your gateway to business excellence and community growth in Kananga, Leyte">
@@ -44,24 +44,54 @@
     </nav>
 
     <main>
-         <h1>Directory</h1>
-  <div class="view-toggle">
-    <button id="grid-view-btn" class="active">
-        <img src="images/grid.svg" alt="Grid View Icon">
-    </button>
-    
-    <button id="list-view-btn">
-        <img src="images/list.svg" alt="List View Icon">
-    </button> 
-</div>
+         <h1>Home</h1>
+         <section class="hero">
+            <img src="images/chamber_homepage_hero.jpg" alt="chamber_homepage_hero">
+            <div class="hero-content">
+                <h2>BE PART OF OUR STRENGTH</h2>
+                <p>Connect, grow, and thrive with a network dedicated to supporting your business. If we are TOGETHER, we will become STRONGER!.</p>
+                <button>Join Us Now!</button>
+            </div>
+        </section>
+<section class="events">
+    <h2>UPCOMING EVENTS!</h2>
+    <ul>
+        <li><a href="#group-caravan" class="event-link">Group Caravan and Island Hopping - December 15, 2025</a></li>
+        <li><a href="#christmas-party" class="event-link">Christmas Party - December 20, 2025</a></li>
+    </ul>
+</section>
 
-  <div id="members" class="grid"></div>
+
+  <section id="weather-container">
+        <h2>Kananga Current Weather</h2>
+        
+        <img id="weather-icon" src="https://openweathermap.org/img/wn/"     alt="weather icon">
+  
+        <p>Temperature <span id="current-temp"></span></p>
+        <p>Wind: <span id="current-wind"></span></p>
+        <p>Humidity: <span id="current-humidity"></span></p>
+  </section>
+
+  
+    <section id="forecast-container">
+        <h2>3-Day Forecast</h2>
+        <div id="forecast"></div>   
+    </section>
+
+    <div id="company-container" class="company-container">
+        <h2>MEMBER'S SPOTLIGHT</h2>
+        <div class="company-card">...</div>
+        <div class="company-card">...</div>
+        <div class="company-card">...</div>
+    </div>
+
+ 
 
     </main>
-
-    <!-- <script src="scripts/chamber.js" defer></script> -->
+     
     <script src="scripts/directory.js" defer></script>
-
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/company.js"></script>
 
     <footer>
         <div class="footer">

@@ -44,8 +44,8 @@ color: var(--primary-color);
 
 header img {
 display: block;
-width: 100%;
-height: auto; /*this Auto is making and bringing all content to the top alignment*/
+width: 48px;
+height: 48px; /*this Auto is making and bringing all content to the top alignment*/
 padding-bottom: 3px;
 }
 
@@ -56,7 +56,7 @@ padding-bottom: 3px;
 background: none;
 border: none;
 cursor: pointer;
-font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-family: var(--font-headings);
 }
 
 
@@ -121,11 +121,9 @@ margin-left: 10px;
 /* chamber project */
 /* ----------MAIN---------- */
 
-
 .empowering-vismin {
 display: grid;  
 grid-template-columns: 1fr;               
-
 gap: 20px;                      
 padding-bottom: 10px;      
 }
@@ -151,7 +149,7 @@ text-align: center;
 align-items: center;
 font-size: 10vw; /*vw is good for text responsiveness*/
 text-shadow: 2px 2px 6px var(--hover);
--webkit-text-stroke: 1px var(--background-color); /* stroke width and color */
+ 
 
 
 
@@ -266,6 +264,7 @@ font-weight: bold;
 /* ************FOOTER************ */
 .footer {
 display: grid;
+min-height: 150px;
 grid-template-columns: 1fr;
 align-items: center;
 justify-content: center;
@@ -377,9 +376,9 @@ margin-bottom: 1rem;
 }
 
 .member-card img {
-aspect-ratio: 1.5 / 1; /*this made the images the same height*/
+aspect-ratio: 1.5/1; /*this made the images the same height*/
 width: 100%;  
-max-width: 150px; 
+max-width: 100px;
 height: auto; 
 }
 
@@ -447,3 +446,181 @@ font-size: 1.2rem;
 margin-bottom: 5px;
 }
 }
+
+/* HOME PAGE*/
+.hero {
+    position: relative;
+    width: 100%;
+    height: 60vh; /* adjust as needed */
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* centers text */
+    text-align: center;
+    background: var(--background-color) ;
+    width: 340px;
+    padding: 20px;
+}
+
+.hero-content h2 {
+    font-size: 2.5rem;
+    margin-top: -20px;
+    padding-top: 20px;
+    color: var(--primary-color);
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    font-weight: bold;
+ 
+}
+
+.hero-content button {
+    background: var(--primary-color);
+    border-radius: 5px;
+   padding: 10px 20px;
+    font-size: 1rem;
+    color: var(--background-color);
+    cursor: pointer;
+}
+
+.hero-content button:hover {
+    background: var(--hover);
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.events h2{
+    padding-left: 10px ;
+}
+
+/* CURRENT WEATHER */
+main #weather-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    font-family: var(--font-body);
+    text-align: center;
+    margin: 2rem auto; /* centers the box, the margin-right/left to '0' is not working for centering */
+    background-color: var(--secondary);
+    width: 400px;
+    color: var(--background-color);
+}
+
+main p, #current-temp, #current-wind, #current-humidity {
+    color:var(--background-color);
+}
+
+#weather-container h2 {
+    color: var(--background-color);
+    padding-bottom: 15px;
+    background: var(--primary-color);
+    padding-top: 10px;
+    font-size: 1.7rem;
+}
+
+
+#weather-icon {
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin: 0 auto;
+}
+
+
+figcaption {
+    font-weight: bold;
+    text-transform: capitalize; /* capitalize the letter */
+    color: var(--background-color);
+    font-size: 1.5rem;
+}
+
+#forecast-container h2 {
+    width: auto;
+    text-align: center;
+    font-size: 1.7rem;
+    padding-top: 30px;
+    color: var(--primary-color);
+    
+}
+
+#forecast {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;           
+  flex-wrap: wrap;     
+  justify-content: center;
+  padding-bottom: 20px;
+  margin-top: -10px;
+}
+
+.forecast-item {
+  background-color: var(--primary-color);   
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  width: auto;              
+}
+
+.forecast-item h3 {
+    color: var(--background-color);
+    
+}
+
+/* 
+MEMBERS SPOTLIGHT */
+.company-container h2 {
+    color: var(--background-color); /* dark color for visibility */
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+
+.company-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 1.5rem; 
+    justify-content: center; 
+    padding: 1rem;
+    background: var(--primary-color);
+}
+
+
+.company-card {
+    background-color: var(--background-color);
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    color: var(--primary-color); 
+}
+
+
+.company-card img {
+    width: 120px;
+    height: 80px;
+    margin-bottom: 1rem;
+}
+
+
+.company-card p, 
+.company-card h3, 
+.company-card a {
+    color: var(--primary-color); 
+    text-align: center;
+}
+
+

@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 2rem;
+    background-color:#f0f8ff;
+}
+
+#weather-container {
+  display: inline-block;
+  background: lemonchiffon;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#weather-icon {
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin: 0 auto;
+}
+
+
+figcaption {
+    font-weight: bold;
+    text-transform: capitalize; /* capitalize the letter */
+    color: fuchsia;
+    font-size: 1.5rem;
+}
+
+#forecast {
+  display: flex;
+  gap: 60px;           /* space between forecast items */
+  flex-wrap: wrap;      /* allows items to wrap on small screens */
+  justify-content: center; /* center items horizontally */
+}
+
+.forecast-item {
+  background-color: #f0f0f0;  /* light background */
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  width: 220px;               /* consistent width */
+}
