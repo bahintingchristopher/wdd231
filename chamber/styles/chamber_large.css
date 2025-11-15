@@ -62,98 +62,40 @@ font-size: larger;
 
 
 
-
-/* CHAMBER OF COMMERCE */
-/* ----------MAIN---------- */
-.empowering-vismin {
-display: grid;  
-grid-template-columns: 2fr 1fr;               
-align-items: center;           
-gap: 10px;                      
-padding-bottom: 10px;      
-}
-
-.empowering-vismin .hero {
-margin-right: 10px;           
-}
-
-.hero img {
-max-width: 100%;
-height: auto;
-display: block;
-padding-top: 10px;
-
-}
-
-.hero h1 {
-font-size: 5vw;
-}
-
-/* ABOUT ME */
-.about {
-display: flex;
-flex-direction: column;  
-justify-content: center;  
-gap: 0.5rem;  
-padding: 0 1rem;
-}
-
-.about h2 {
-width: 100%;
-text-align: center;
-font-size: 1.8rem;
-margin: 0;  
-}
-
-.about p {
-font-size: 1.5rem;
-line-height: 1.6;
-margin: 0;  
-margin-top: 0.5rem; 
-height: auto;
-}
-
-
-.mission-vision {
-display: grid;  
-grid-template-columns: 1fr 1fr;
-gap: 20px;
-text-align: center;
-margin: 0 auto;
-max-width: 100%;
-}
-
-
-
-.facilities {
-margin: 0 auto;
-max-width: 100%;
-}
-
-.facilities ul{
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-margin-left: 0;
-}
-
-
 /* HOME PAGE */
-
-.hero-content h2 {
-    font-size: 2.5rem;
-    margin-top: 20px;
-    color: var(--primary-color);
-}
-
 
 
 .hero-content {
-   width: 640px;
-  }
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* centers text */
+    text-align: center;
+    width: 640px;
+    padding: 20px;
+    background: var(--primary-color);
+}
 
-  .company-container h2 {
+.hero-content h2 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    margin-bottom: 20px ;
+}
+
+.company-container h2 {
     margin-top: 50%;
 }
 
+
+.hero-content button {
+    background: var(--primary-color);
+    border-radius: 5px;
+   padding: 10px 20px;
+   top: 100px;
+    font-size: 1rem;
+    background-color: var(--background-color);
+    cursor: pointer;
+    color: var(--primary-color);
+}
 
 }

@@ -7,6 +7,7 @@ const currentWeatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=$
 const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=metric&appid=${apiKey}`;
 
 // --- Select HTML elements ---
+const currentCondition = document.querySelector('#current-condition');
 const currentTemp = document.querySelector('#current-temp');
 const currentWind = document.querySelector('#current-wind');
 const currentHumidity = document.querySelector('#current-humidity');
@@ -21,6 +22,8 @@ async function getCurrentWeather() {
         if (!response.ok) throw new Error("Failed to fetch current weather");
         const data = await response.json();
 
+        currentCondition.textContent = data.weather[0].description.charAt(0).toUpperCase() + data.weather[0].description.slice(1);
+
         // Display temperature
         currentTemp.textContent = `${data.main.temp.toFixed(1)}°C`;
 
@@ -31,6 +34,7 @@ async function getCurrentWeather() {
         // Display humidity
         currentHumidity.textContent = `${data.main.humidity}%`;
 
+        
         // Display icon
         const iconUrl = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
         weatherIcon.setAttribute('src', iconUrl);
@@ -85,7 +89,10 @@ async function getForecast() {
             forecastItem.innerHTML = `
                 <h3>${date}</h3>
                 <p> Min: ${minTemp}°C / Max: ${maxTemp}°C </p>
-                <p>${middayItem.weather[0].description}</p>
+                <p>
+                    ${middayItem.weather[0].description.charAt(0).toUpperCase() + middayItem.weather[0].description.slice(1)}
+                </p>
+
                 <img src="https://openweathermap.org/img/wn/${middayItem.weather[0].icon}@2x.png" alt="${middayItem.weather[0].description}">
             `;
             forecastContainer.appendChild(forecastItem);

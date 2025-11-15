@@ -323,29 +323,28 @@ margin-bottom: 5px;
     left: 50%;
     transform: translate(-50%, -50%); /* centers text */
     text-align: center;
-    background: var(--background-color) ;
     width: 340px;
     padding: 20px;
 }
 
 .hero-content h2 {
-    font-size: 2.5rem;
-    margin-top: -20px;
-    padding-top: 20px;
-    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-top: -120px;
+    margin-bottom: -10px;
+    /* background: var(--background-color); */
+    color: var(--background-color);
 }
 
 .hero-content p {
     font-size: 1.2rem;
-    color: var(--primary-color);
-    font-weight: bold;
- 
+    color: var(--background-color);
 }
 
 .hero-content button {
     background: var(--primary-color);
     border-radius: 5px;
    padding: 10px 20px;
+   top: 100px;
     font-size: 1rem;
     color: var(--background-color);
     cursor: pointer;
@@ -372,12 +371,17 @@ main #weather-container {
     text-align: center;
     margin: 2rem auto; /* centers the box, the margin-right/left to '0' is not working for centering */
     background-color: var(--secondary);
-    width: 400px;
+    width: 300px;
     color: var(--background-color);
+}
+
+#current-condition{
+color: var(--background-color)
 }
 
 main p, #current-temp, #current-wind, #current-humidity {
     color:var(--background-color);
+    font-size: .9rem;
 }
 
 #weather-container h2 {
@@ -385,7 +389,7 @@ main p, #current-temp, #current-wind, #current-humidity {
     padding-bottom: 15px;
     background: var(--primary-color);
     padding-top: 10px;
-    font-size: 1.7rem;
+    font-size: 1rem;
 }
 
 
@@ -407,10 +411,17 @@ figcaption {
 #forecast-container h2 {
     width: auto;
     text-align: center;
-    font-size: 1.7rem;
-    padding-top: 30px;
-    color: var(--primary-color);
-    
+    font-size: 1.5rem;
+    padding-top: 10px;
+    color: var(--background-color);   
+    background-color: var(--primary-color); 
+    padding-bottom: 20px;
+    margin-bottom: -10px;
+    margin-left: 5px;
+    margin-right: 5.5px;
+    justify-content: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 #forecast {
@@ -421,11 +432,12 @@ figcaption {
   justify-content: center;
   padding-bottom: 20px;
   margin-top: -10px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .forecast-item {
   background-color: var(--primary-color);   
-  padding: 10px;
   border-radius: 8px;
   text-align: center;
   width: auto;              
@@ -433,16 +445,25 @@ figcaption {
 
 .forecast-item h3 {
     color: var(--background-color);
-    
+    font-size: .9rem;   
+}
+
+.forecast-item p {
+    font-size: .9rem;
 }
 
 /* 
 MEMBERS SPOTLIGHT */
-.company-container h2 {
+.spotlight h2 {
     color: var(--background-color); /* dark color for visibility */
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: -10px; 
+    padding-top: 10px;
+    padding-bottom: 10px;       
+    border-top: 10px solid var(--primary-color);
+    
+    background: var(--primary-color);
 }
 
 
@@ -466,7 +487,7 @@ MEMBERS SPOTLIGHT */
 
 
 .company-card img {
-    width: 120px;
+    width: auto;
     height: 80px;
     margin-bottom: 1rem;
 }
