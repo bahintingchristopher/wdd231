@@ -362,6 +362,13 @@ margin-bottom: 5px;
     padding-left: 10px ;
 }
 
+.events ul li a {
+    line-height: 25px; 
+    display: block;
+    padding: 4px 0;
+}
+
+
 /* CURRENT WEATHER */
 main #weather-container {
     display: grid;
@@ -389,7 +396,7 @@ main p, #current-temp, #current-wind, #current-humidity {
     padding-bottom: 15px;
     background: var(--primary-color);
     padding-top: 10px;
-    font-size: 1rem;
+    font-size: 1.3rem;
 }
 
 
