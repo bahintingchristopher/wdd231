@@ -1,3 +1,7 @@
+
+import { modalcourses } from "../data/modalcourses.js";
+
+
 const navbutton = document.querySelector('#ham-btn');
 const navlinks = document.querySelector('#nav-bar');
 
@@ -79,3 +83,27 @@ wddBtn.addEventListener("click", () => filterCourses("WDD", true));
 
 // Default: show all WITHOUT checkmarkss
 filterCourses("ALL", false);
+
+//MODAL
+const courseDetails = document.getElementById("course-details");
+
+modalcourses.forEach(course => {
+  const courseLi = document.getElementById(course.code);
+  if (!courseLi) return;
+
+  courseLi.addEventListener("click", () => {
+    courseDetails.innerHTML = `
+      <button id="closeModal">❌</button>
+      <h2>${course.subject} ${course.number}</h2>
+      <h3>${course.title}</h3>
+      <p><strong>Credits:</strong> ${course.credits}</p>
+      <p><strong>Certificate:</strong> ${course.certificate}</p>
+      <p>${course.description}</p>
+      <p><strong>Technologies:</strong> ${course.technology.join(', ')}</p>
+    `;
+    courseDetails.showModal();
+
+    const closeBtn = document.getElementById("closeModal");
+    closeBtn.addEventListener("click", () => courseDetails.close());
+  });
+});

@@ -66,14 +66,15 @@
         </section>
         <section class="course-list">
             <h2>Course List</h2>
-            <ul class="course-items">
-                <li class="WDD" data-credits="1">WDD130</li>
-                <li class="CSE" data-credits="1">CSE210</li>
-                <li class="WDD" data-credits="1">WDD131</li>
-                <li class="CSE" data-credits="1">CSE110</li>
-                <li class="WDD" data-credits="1S">WDD231</li>
-                <li class="CSE" data-credits="1">CSE111</li>
+           <ul class="course-items">
+                <li id="WDD130" class="WDD" data-credits="1">WDD130</li>
+                <li id="CSE210" class="CSE" data-credits="1">CSE210</li>
+                <li id="WDD131" class="WDD" data-credits="1">WDD131</li>
+                <li id="CSE110" class="CSE" data-credits="1">CSE110</li>
+                <li id="WDD231" class="WDD" data-credits="1">WDD231</li>
+                <li id="CSE111" class="CSE" data-credits="1">CSE111</li>
             </ul>
+
         </section>
     </div>
 
@@ -84,12 +85,16 @@
   </p>
 </div>
 
+<dialog id="course-details"></dialog>
+
     </main>
 
-    <script src="scripts/chamber.js" defer></script>
+    <!-- <script src="scripts/chamber.js" defer></script> -->
+     <script  src="scripts/chamber.js"  type="module"></script>
 
 
-    <footer>
+
+    <footer> 
         <div class="social">
              <a href="https://github.com/bahintingchristopher/wdd231"  target="_blank"><img src="images/github.svg" alt="github"   width="16"  height="16"></a>
             <a href="www.linkedin.com/in/cbahinting"  target="_blank"><img src="images/linkedin.svg" alt="linkedin"   width="16"  height="16"></a>
