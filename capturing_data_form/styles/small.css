@@ -322,3 +322,66 @@ form {
 .falling-balloons .balloon:nth-child(6) { background: orange; }
 .falling-balloons .balloon:nth-child(7) { background: purple; }
 .falling-balloons .balloon:nth-child(8) { background: cyan; }
+
+
+
+.loader-t {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 5px solid #ccc;
+  border-top-color: #3498db;
+  position: relative;
+  margin: 2rem auto;
+}
+
+.loader-t::after {
+  content: "★";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: blueviolet;
+  font-size: 50px;
+  animation: spin 1.5s linear infinite; /* star spins continuously */
+}
+
+@keyframes spin {
+  0% { transform: translate(-50%, -50%) rotate(0deg); }
+  100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+/* Optional: hover effect to scale star */
+.loader-t:hover::after {
+  transform: translate(-50%, -50%) scale(1.5); 
+  transition: transform 0.5s ease-in-out;
+}
+
+
+
+/* USING HOVER */
+.loader-t-hover {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 5px solid #ccc;
+  border-top-color: #3498db;
+  position: relative;
+  margin: 2rem auto;
+}
+
+.loader-t-hover::after {
+  content: "★";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0deg) scale(1);
+  color: blueviolet;
+  font-size: 50px;
+  transition: transform 1.5s ease-in-out; /* smooth hover effect */
+}
+
+/* On hover, rotate and scale the star */
+.loader-t-hover:hover::after {
+  transform: translate(-50%, -50%) rotate(360deg) scale(1.5);
+}
