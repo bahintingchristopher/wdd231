@@ -19,20 +19,23 @@
     const orgTitle = myInfo.get('orgTitle');
     const email = myInfo.get('email');
     const mobile = myInfo.get('mobile');
-    const organization = myInfo.get('organization');
     const membership = myInfo.get('membership');
     const orgDescription = myInfo.get('orgDescription');
 
     document.querySelector('#results').innerHTML = `
     <h2>These are the details from your submission:</h2>
-    <p><strong>Name:</strong> ${firstName} ${lastName}</p>
-    <p><strong>Organizational Title:</strong> ${orgTitle}</p>
+    <p><strong>First Name:</strong> ${firstName}</p>
+    <p><strong>Last Name:</strong>  ${lastName}</p>
     <p><strong>Email:</strong> ${email}</p>
     <p><strong>Mobile Phone:</strong> ${mobile}</p>
-    <p><strong>Organization Name:</strong> ${organization}</p>
+    <p><strong>Business Title / Organization Name:</strong> ${orgTitle}</p>
+    <p><strong>Timestamp:</strong> ${new Date().toLocaleString()}</p>
+
+
+    <h3>Your Membership Level desired are:</h3>
     <p><strong>Membership Level:</strong> ${membership.toUpperCase()}</p>
     <p><strong>Organization Description:</strong> ${orgDescription}</p>
-    <p><strong>Submission Time:</strong> ${new Date().toLocaleString()}</p>
+    
     `;
 
 

@@ -50,34 +50,30 @@
     <div class="form-label">
     <label>
       First Name:
-      <input id="firstName" type="text" name="firstName" title="Applicant First Name" required autocomplete="given-name">
+      <input id="firstName" type="text" name="firstName" title="Applicant First Name" required autocomplete="given-name" placeholder="Your First Name, Example: Christopher">
     </label>
 
     <label>
       Last Name:
-      <input id="lastName" type="text" name="lastName" title="Applicant Last Name" required autocomplete="family-name">
+      <input id="lastName" type="text" name="lastName" title="Applicant Last Name" required autocomplete="family-name" placeholder="Your Last Name, Example: Bahinting">
     </label>
 
-    <label>
-      Organizational Title:
-      <input id="organizationTitle" type="text" name="orgTitle" title="Your Title in Organization" autocomplete="organization-title" 
-             pattern="[A-Za-z\s\-]{7,}" placeholder="At least 7 characters, letters, hyphens, spaces">
-    </label>
-
-    <label>
+        <label>
       Email:
-      <input id="email" type="email" name="email" title="Email Address" required autocomplete="email" placeholder="example@email.com">
+      <input id="email" type="email" name="email" title="Email Address" required autocomplete="email" placeholder="your@email.com">
     </label>
 
     <label>
       Mobile Phone:
-      <input id="phone" type="tel" name="mobile" title="Mobile Phone Number" required autocomplete="tel">
+      <input id="phone" type="tel" name="mobile" title="Mobile Phone Number" required autocomplete="tel" placeholder="09121212981">
     </label>
 
     <label>
-      Organization Name:
-      <input  id="organizationName" type="text" name="organization" title="Organization Name" required autocomplete="organization">
+      Business / Organization Name:
+      <input  id="organizationTitle"   type="text"   name="orgTitle"   title="Title in Organization"   autocomplete="organization-title" 
+              pattern="[A-Za-z\s\-]{7,}"   placeholder="At least 7 characters, letters, hyphens, spaces">
     </label>
+
 
     <label>
       Membership Level:
@@ -108,6 +104,16 @@
 
   <div class="card-container">
     <section class="card">
+
+      <div class="flower-rain">
+      <div class="flower">🌸</div>
+      <div class="flower">🌺</div>
+      <div class="flower">🌸</div>
+      <div class="flower">🌺</div>
+      <div class="flower">🌸</div>
+      <div class="flower">🌺</div>
+   </div>
+   
       <h3>Free Membership</h3>
       <p>No Fee, for Non-profit organizations</p>
       <a id="openFree">Learn More</a>
