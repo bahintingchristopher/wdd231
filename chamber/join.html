@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <meta name="author" content="Christopher T. Bahinting"> 
-    <meta name="description" content="WDD 231 - Chamber Home Page by  Christopher T. Bahinting.">
-    <title> Chamber Home Page</title>
+    <meta name="description" content="WDD 231 - Chamber join or membership Page by  Christopher T. Bahinting.">
+    <title> Chamber join or membership Page</title>
 
     <meta property="og:title" content="Kananga Chamber of Commerce">
     <meta property="og:description" content="Your gateway to business excellence and community growth in Kananga, Leyte">
@@ -45,45 +45,45 @@
 <main>
    <div class="join-form">
 
-  <form method="get" action="thankyou.html">
+  <form method="get" action="thanks.html">
 
     <div class="form-label">
     <label>
       First Name:
-      <input type="text" name="firstName" title="Applicant First Name" required autocomplete="given-name">
+      <input id="firstName" type="text" name="firstName" title="Applicant First Name" required autocomplete="given-name">
     </label>
 
     <label>
       Last Name:
-      <input type="text" name="lastName" title="Applicant Last Name" required autocomplete="family-name">
+      <input id="lastName" type="text" name="lastName" title="Applicant Last Name" required autocomplete="family-name">
     </label>
 
     <label>
       Organizational Title:
-      <input type="text" name="orgTitle" title="Your Title in Organization" autocomplete="organization-title" 
+      <input id="organizationTitle" type="text" name="orgTitle" title="Your Title in Organization" autocomplete="organization-title" 
              pattern="[A-Za-z\s\-]{7,}" placeholder="At least 7 characters, letters, hyphens, spaces">
     </label>
 
     <label>
       Email:
-      <input type="email" name="email" title="Email Address" required autocomplete="email" placeholder="example@email.com">
+      <input id="email" type="email" name="email" title="Email Address" required autocomplete="email" placeholder="example@email.com">
     </label>
 
     <label>
       Mobile Phone:
-      <input type="tel" name="mobile" title="Mobile Phone Number" required autocomplete="tel">
+      <input id="phone" type="tel" name="mobile" title="Mobile Phone Number" required autocomplete="tel">
     </label>
 
     <label>
       Organization Name:
-      <input type="text" name="organization" title="Organization Name" required autocomplete="organization">
+      <input  id="organizationName" type="text" name="organization" title="Organization Name" required autocomplete="organization">
     </label>
 
     <label>
       Membership Level:
       <select name="membership" required>
         <option value="">Select membership</option>
-        <option value="free">NP Membership (No Fee)</option>
+        <option value="free">Free Membership (No Fee)</option>
         <option value="bronze">Bronze Membership</option>
         <option value="silver">Silver Membership</option>
         <option value="gold">Gold Membership</option>
@@ -164,14 +164,14 @@
 
               
 
-    </main>
-     
-    <script src="scripts/directory.js" defer></script>
-    <script src="scripts/weather.js" defer></script>
-    <script src="scripts/company.js" defer></script>
-    <script src="scripts/join.js"></script>
+      </main>
+      
+      <script src="scripts/directory.js" defer></script>
+      <script src="scripts/weather.js" defer></script>
+      <script src="scripts/company.js" defer></script>
+      <script src="scripts/join.js" defer></script>
 
-    <footer>
+      <footer>
         <div class="footer">
         <div class="address">
             <h2>HEAD OFFICE</h2>
