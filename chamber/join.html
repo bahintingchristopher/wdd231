@@ -39,12 +39,177 @@
             <li class="nav-menu"><a href="#">DISCOVER</a></li>
             <li class="nav-menu"><a href="directory.html">DIRECTORY</a></li>
              <li class="nav-menu"><a href="#">JOIN</a></li>
-            
         </ul>
     </nav>
 
-    <main>
-         
+<main>
+   <div class="join-form">
+
+  <form method="get" action="thankyou.html">
+
+    <div class="form-label">
+    <label>
+      First Name:
+      <input type="text" name="firstName" title="Applicant First Name" required autocomplete="given-name">
+    </label>
+
+    <label>
+      Last Name:
+      <input type="text" name="lastName" title="Applicant Last Name" required autocomplete="family-name">
+    </label>
+
+    <label>
+      Organizational Title:
+      <input type="text" name="orgTitle" title="Your Title in Organization" autocomplete="organization-title" 
+             pattern="[A-Za-z\s\-]{7,}" placeholder="At least 7 characters, letters, hyphens, spaces">
+    </label>
+
+    <label>
+      Email:
+      <input type="email" name="email" title="Email Address" required autocomplete="email" placeholder="example@email.com">
+    </label>
+
+    <label>
+      Mobile Phone:
+      <input type="tel" name="mobile" title="Mobile Phone Number" required autocomplete="tel">
+    </label>
+
+    <label>
+      Organization Name:
+      <input type="text" name="organization" title="Organization Name" required autocomplete="organization">
+    </label>
+
+    <label>
+      Membership Level:
+      <select name="membership" required>
+        <option value="">Select membership</option>
+        <option value="np">NP Membership (No Fee)</option>
+        <option value="bronze">Bronze Membership</option>
+        <option value="silver">Silver Membership</option>
+        <option value="gold">Gold Membership</option>
+      </select>
+    </label>
+
+    <label>
+      Organization Description:
+      <textarea name="orgDescription" title="Organization Description"></textarea>
+    </label>
+
+    <input type="hidden" name="timestamp" id="timestamp">
+     </div>
+
+      <button id="fire"  type="submit">Avail Membership</button>
+  </form>
+
+
+
+<div class="membership-container">
+  <h2>BENEFITS OF MEMBERSHIP</h2>
+
+  <div class="card-container">
+    <section class="card">
+      <h3>Free Membership</h3>
+      <p>No Fee, for Non-profit organizations</p>
+      <a data-modal="free-modal">Learn More</a>
+    </section>
+
+    <section class="card">
+        <div class="flower-rain">
+    <div class="flower">🌸</div>
+    <div class="flower">🌺</div>
+    <div class="flower">🌸</div>
+    <div class="flower">🌺</div>
+    <div class="flower">🌸</div>
+    <div class="flower">🌺</div>
+  </div>
+
+      <h3>Bronze Membership</h3>
+      <p>Mid-level paid membership</p>
+      <a data-modal="bronze-modal">Learn More</a>
+    </section>
+
+    <section class="card">
+        <div class="flower-rain">
+    <div class="flower">🌸</div>
+    <div class="flower">🌺</div>
+    <div class="flower">🌸</div>
+    <div class="flower">🌺</div>
+    <div class="flower">🌸</div>
+    <div class="flower">🌺</div>
+  </div>
+
+      <h3>Silver Membership</h3>
+      <p>Mid-level paid membership</p>
+      <a data-modal="silver-modal">Learn More</a>
+    </section>
+
+    <section class="card">
+        <div class="flower-rain">
+    <div class="flower">🌸</div>
+    <div class="flower">🌺</div>
+    <div class="flower">🌸</div>
+    <div class="flower">🌺</div>
+    <div class="flower">🌸</div>
+    <div class="flower">🌺</div>
+  </div>
+
+      <h3>Gold Membership</h3>
+      <p>Premium membership with maximum benefits</p>
+      <a data-modal="gold-modal">Learn More</a>
+    </section>
+  </div>
+</div>
+
+
+
+<!-- Modals -->
+<!-- <div id="np-modal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>NP Membership Benefits</h2>
+    <ul>
+      <li>Access to networking events</li>
+      <li>Participation in volunteer initiatives</li>
+    </ul>
+  </div>
+</div>
+
+<div id="bronze-modal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Bronze Membership Benefits</h2>
+    <ul>
+      <li>All NP benefits</li>
+      <li>Discounted event tickets</li>
+      <li>Listing on the member directory</li>
+    </ul>
+  </div>
+</div>
+
+<div id="silver-modal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Silver Membership Benefits</h2>
+    <ul>
+      <li>All Bronze benefits</li>
+      <li>Featured advertising on home page</li>
+      <li>Access to training programs</li>
+    </ul>
+  </div>
+</div>
+
+<div id="gold-modal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Gold Membership Benefits</h2>
+    <ul>
+      <li>All Silver benefits</li>
+      <li>Spotlight positions in newsletters</li>
+      <li>Exclusive VIP events</li>
+    </ul>
+  </div>
+</div> -->
+
               
 
     </main>
@@ -52,6 +217,7 @@
     <script src="scripts/directory.js" defer></script>
     <script src="scripts/weather.js" defer></script>
     <script src="scripts/company.js" defer></script>
+    <script src="scripts/join.js"></script>
 
     <footer>
         <div class="footer">
