@@ -1,28 +1,85 @@
+const mydialog = document.querySelector("#mydialog");
+
+// Buttons
+const openFree = document.querySelector("#openFree");
+const openBronze = document.querySelector("#openBronze");
+const openSilver = document.querySelector("#openSilver");
+const openGold = document.querySelector("#openGold");
+
+// Function to open dialog with dynamic content
+function showDialog(title, text) {
+  mydialog.innerHTML = `
+    <h2>${title}</h2>
+    <p>${text}</p>
+    <button id="closeDialog">Close</button>
+  `;
+
+  const closeDialog = mydialog.querySelector("#closeDialog");
+  closeDialog.addEventListener("click", () => mydialog.close());
+
+  mydialog.showModal();
+}
+
+// Event listeners
+// Free Membership
+openFree.addEventListener("click", () => {
+  showDialog(
+    "Free Membership",
+    `
+    <ul>
+      <li>No fee for non-profit organizations</li>
+      <li>Access to basic resources and networking</li>
+      <li>View other member profiles</li>
+    </ul>
+    `
+  );
+});
 
 
-  // Set timestamp when page loads
-  document.getElementById('timestamp').value = new Date().toISOString();
+// Bronze Membership
+openBronze.addEventListener("click", () => {
+  showDialog(
+    "Bronze Membership",
+    `
+    <ul>
+      <li>All Free membership benefits</li>
+      <li>Mid-level paid membership perks</li>
+      <li>Access to additional resources and events</li>
+      <li>Basic discounts on selected services</li>
+    </ul>
+    `
+  );
+});
 
-  // Modal functionality
-  const modalLinks = document.querySelectorAll('.card a');
-  modalLinks.forEach(link => {
-    link.addEventListener('click', function() {
-      const modalId = this.getAttribute('data-modal');
-      document.getElementById(modalId).style.display = 'block';
-    });
-  });
+// Silver Membership
+openSilver.addEventListener("click", () => {
+  showDialog(
+    "Silver Membership",
+    `
+    <ul>
+      <li>All Free membership benefits</li>
+      <li>Mid-level paid membership perks</li>
+      <li>Access to premium resources</li>
+      <li>Discounts on selected services</li>
+      <li>Participation in special events</li>
+    </ul>
+    `
+  );
+});
 
-  const closeButtons = document.querySelectorAll('.close');
-  closeButtons.forEach(btn => {
-    btn.addEventListener('click', function() {
-      this.closest('.modal').style.display = 'none';
-    });
-  });
 
-  // Close modal on outside click
-  window.addEventListener('click', function(e) {
-    if (e.target.classList.contains('modal')) {
-      e.target.style.display = 'none';
-    }
-  });
+openGold.addEventListener("click", () => {
+  showDialog(
+    "Gold Membership",
+    `
+    Premium membership with **maximum benefits**:<br>
+    - Access to all company services and products<br>
+    - Dividend sharing opportunities<br>
+    - Exclusive discounts<br>
+    - Invitations to VIP events<br>
+    - Priority customer support<br>
+    - Networking opportunities with top members
+    `
+  );
+});
 

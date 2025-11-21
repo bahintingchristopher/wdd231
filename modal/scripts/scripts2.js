@@ -1,30 +1,35 @@
+const mydialog = document.querySelector("#mydialog");
+const dialogText = document.querySelector("#mydialog-text");
+const closeDialog = document.querySelector("#closeDialog");
 
-const openButton = document.querySelector("#openButton");
-const dialogBox = document.querySelector("#dialogBox");
-const closeButton = document.querySelector("#closeButton");
-const dialogBoxText = document.querySelector("#dialogBox div");
+// buttons
+const openFree = document.querySelector("#openFree");
+const openBronze = document.querySelector("#openBronze");
+const openSilver = document.querySelector("#openSilver");
+const openGold = document.querySelector("#openGold");
 
-
-
-
-// show
-openButton1.addEventListener("click", () => {
-    dialogBox.showModal();
-    dialogBoxText.innerHTML = `One Apple has 95 calories`
+// show dialog with different text
+openFree.addEventListener("click", () => {
+  mydialog.showModal();
+  dialogText.innerHTML = `Free Membership:<br>No Fee, for Non-profit organizations.`;
 });
 
-openButton2.addEventListener("click", () => {
-    dialogBox.showModal();
-    dialogBoxText.innerHTML = `One Orange has 45 calories`
+openBronze.addEventListener("click", () => {
+  mydialog.showModal();
+  dialogText.innerHTML = `Bronze Membership:<br>Mid-level paid membership.`;
 });
 
-openButton3.addEventListener("click", () => {
-    dialogBox.showModal();
-    dialogBoxText.innerHTML = `One Banana has 500 calories`
+openSilver.addEventListener("click", () => {
+  mydialog.showModal();
+  dialogText.innerHTML = `Silver Membership:<br>Higher-level paid membership.`;
 });
 
+openGold.addEventListener("click", () => {
+  mydialog.showModal();
+  dialogText.innerHTML = `Gold Membership:<br>Premium membership with maximum benefits.`;
+});
 
-// close
-closeButton.addEventListener("click", () => {
-    dialogBox.close();
+// close dialog
+closeDialog.addEventListener("click", () => {
+  mydialog.close();
 });
