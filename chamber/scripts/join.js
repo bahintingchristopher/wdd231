@@ -72,7 +72,7 @@ openGold.addEventListener("click", () => {
   showDialog(
     "Gold Membership",
     `
-    Premium membership with **maximum benefits**:<br>
+    Premium membership with maximum benefits:<br>
     - Access to all company services and products<br>
     - Dividend sharing opportunities<br>
     - Exclusive discounts<br>

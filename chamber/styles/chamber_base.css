@@ -701,8 +701,8 @@ input, select, textarea {
 
 /* Text inside dialog */
 #mydialog {
-  background-color: white; /* or whatever modal bg */
-  color: black;            /* ensures text is black */
+  background-color: var(--background-color); 
+  color: var(--primary-color);            
   padding: 20px;
   border-radius: 10px;
   width: 80%;
