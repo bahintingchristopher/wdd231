@@ -24,13 +24,16 @@
     const orgDescription = myInfo.get('orgDescription');
 
     document.querySelector('#results').innerHTML = `
+    <h2>These are the details from your submission:</h2>
     <p><strong>Name:</strong> ${firstName} ${lastName}</p>
-    <p><strong>Title/Role:</strong> ${orgTitle}</p>
+    <p><strong>Organizational Title:</strong> ${orgTitle}</p>
     <p><strong>Email:</strong> ${email}</p>
-    <p><strong>Phone:</strong> ${mobile}</p>
-    <p><strong>Organization:</strong> ${organization}</p>
-    <p><strong>Membership:</strong> ${membership}</p>
+    <p><strong>Mobile Phone:</strong> ${mobile}</p>
+    <p><strong>Organization Name:</strong> ${organization}</p>
+    <p><strong>Membership Level:</strong> ${membership.toUpperCase()}</p>
     <p><strong>Organization Description:</strong> ${orgDescription}</p>
     <p><strong>Submission Time:</strong> ${new Date().toLocaleString()}</p>
     `;
 
+
+    

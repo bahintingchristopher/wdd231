@@ -518,9 +518,11 @@ MEMBERS SPOTLIGHT */
 
 /* LEFT COLUMN: FORM */
 .join-form {
-  background-color: #f9f9f9;
+  background-color: var(--background-color);
   padding: 20px;
   border-radius: 8px;
+  
+  
 }
 
 .join-form form {
@@ -532,6 +534,7 @@ form .form-label {
   display: grid;
   grid-template-columns: 1fr; /* single column */
   gap: 1rem;
+  padding-right: 10px;
 }
 
 form .form-label label {
@@ -545,12 +548,13 @@ input, select, textarea {
   padding: 0.5rem;
   margin-top: 0.2rem;
   border-radius: 5px;
-  border: 2px solid #ccc;
+  border: 1px solid var(--primary-color);
   font-size: 1rem;
   margin-bottom: 1rem;
   box-sizing: border-box;
   box-shadow: inset 3px 0 0 0 var(--primary-color);
-  border-left: 2px solid var(--background-color);
+  border-left:5px solid var(--background-color);
+  background-color: var(--background-color);
 }
 
 /* Submit button */
@@ -572,9 +576,14 @@ input, select, textarea {
 }
 
 .membership-container {
-  padding-left: 30px;
-  padding-right: 30px;
   border-left: 20px;
+  background-color: var(--accent2);
+  }
+
+  .card-container {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
   }
 
 
@@ -582,9 +591,10 @@ input, select, textarea {
   width: 100%;           /* full width */
   text-align: center;    /* center text */
   margin-bottom: 1rem;   /* spacing below heading */
-  font-size: 1.5rem;     /* adjust size */
+  font-size: 1.5rem;      
   font-weight: bold;
-  color: #333;           /* optional color */
+  color: var(--background-color);           /* optional color */
+  padding-top: 2rem;
 }
 
 .card-container .card {
@@ -593,12 +603,12 @@ input, select, textarea {
 
 
 .card {
-  background: white;
+  background: var(--background-color);
   border-left: 10px solid var(--primary-color);
   padding: 1rem;
   border-radius: 10px;
   flex: 1 1 100%; 
-  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  box-shadow: 0 0 5px var(--primary-color);
   position: relative;
   overflow: hidden;
   height: 120px;
@@ -623,21 +633,17 @@ input, select, textarea {
   border-radius: 10px;
 }
 
+.card a:hover {
+  background-color: var(--hover);
+  cursor: pointer; ;
+  
+}
+
 .card {
   position: relative;
   overflow: hidden;
 }
 
-
-
-/* Floating animation */
-/* @keyframes snakeMove {
-  0%   { transform: translateX(0) translateY(0) rotate(0deg); }
-  25%  { transform: translateX(20px) translateY(-10px) rotate(5deg); }
-  50%  { transform: translateX(40px) translateY(0) rotate(-5deg); }
-  75%  { transform: translateX(20px) translateY(10px) rotate(5deg); }
-  100% { transform: translateX(0) translateY(0) rotate(0deg); }
-} */
 .flower-rain {
   position: absolute;
   top: 0;
@@ -690,7 +696,7 @@ input, select, textarea {
   border: none;
   border-radius: 12px;
   background: var(--background-color);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  box-shadow: 0 10px 30px var(--primary-color);
   animation: fadeIn 0.3s ease-out;
 }
 
@@ -744,6 +750,12 @@ input, select, textarea {
 
 
 /* THANKS HTML */
+#results h2 {
+  color: var(--primary-color);
+  margin-left: 15px;
+ text-decoration: underline;
+}
+
 #results p{
   color: var(--primary-color);
   margin-left: 15px;
