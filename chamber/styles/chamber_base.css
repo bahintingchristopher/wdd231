@@ -549,10 +549,13 @@ text-decoration: underline;
 form .form-label label {
 display: flex;
 flex-direction: column;
+font-size: 15px;
+
 }
 
 /* Input, select, textarea full width */
 input, select, textarea {
+height: 44px;
 width: 100%;
 padding: 0.5rem;
 margin-top: 0.2rem;
@@ -574,6 +577,7 @@ margin: 0 auto;
 color: var(--primary-color);
 padding: 10px;
 width: 200px;
+height: 44px;
 border: 2px solid var(--primary-color);
 border-radius: 10px;
 font-size: 1.2rem;
