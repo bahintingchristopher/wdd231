@@ -29,7 +29,7 @@
     <p><strong>Last Name:</strong>  ${lastName}</p>
     <p><strong>Email:</strong> ${email}</p>
     <p><strong>Mobile Phone:</strong> ${mobile}</p>
-    <p><strong>Business Title / Organization Name:</strong> ${orgTitle}</p>
+    <p><strong>Business/Organization Title:</strong> ${orgTitle}</p>
     <p><strong>Timestamp:</strong> ${new Date().toLocaleString()}</p>
 
 
