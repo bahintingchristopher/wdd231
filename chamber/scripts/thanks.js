@@ -34,10 +34,9 @@
 
 
     <h3>Other Details:</h3>
+    <p><strong>Position / Designation Title:</strong> ${designation}</p>
     <p><strong>Membership Level:</strong> ${membership.toUpperCase()}</p>
-    <p><strong>Organization Description:</strong> ${orgDescription}</p>
-     <p><strong>Position / Designation Title:</strong> ${designation}</p>
-    
+    <p><strong>Organization Description:</strong> ${orgDescription}</p> 
     `;
 
 

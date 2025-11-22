@@ -9,9 +9,12 @@ const openGold = document.querySelector("#openGold");
 // Function to open dialog with dynamic content
 function showDialog(title, text) {
   mydialog.innerHTML = `
+
+  <div class="dialog-heading">
     <h2>${title}</h2>
-    <p>${text}</p>
-    <button id="closeDialog">Close</button>
+       <button id="closeDialog">X</button>
+    </div>
+     <p>${text}</p>
   `;
 
   const closeDialog = mydialog.querySelector("#closeDialog");
@@ -24,7 +27,7 @@ function showDialog(title, text) {
 // Free Membership
 openFree.addEventListener("click", () => {
   showDialog(
-    "Free Membership",
+    "NP Membership",
     `
     <ul>
       <li>No fee for non-profit organizations</li>

@@ -620,7 +620,6 @@ box-shadow: 0 0 5px var(--primary-color);
 position: relative;
 overflow: hidden;
 height: 120px;
-overflow: hidden;
 }
 
 .card h3 {
@@ -645,10 +644,6 @@ cursor: pointer;
 }
 
 
-/* .card {
-position: relative;
-overflow: hidden;
-} */ 
 
 .flower-rain {
 position: absolute;
@@ -679,7 +674,7 @@ animation-play-state: running;
 position: absolute;
 font-size: 1.5rem;
 top: -50px;
-animation: fall 2s linear infinite;
+animation: fall 3s linear infinite;
 animation-play-state: paused;  /* start paused */
 }
 
@@ -714,7 +709,7 @@ animation-play-state: paused;  /* start paused */
 /* MODAL STYLES *//* Base dialog styling */
 #mydialog {
 width: 80%;
-max-width: 500px;
+max-width: 400px;
 padding: 20px;
 border: none;
 border-radius: 12px;
@@ -724,6 +719,18 @@ color: var(--primary-color);
 animation: fadeIn 0.3s ease-out;
 }
 
+.dialog-heading {
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content:space-between;
+}
+
+#closeDialog {
+background: var(--primary-color);
+color: var(--background-color);
+padding: 10px 18px;
+}
 
 
 /* Backdrop dim background */
@@ -738,20 +745,7 @@ background: rgba(0,0,0,0.8);
 color: var(--primary-color); }
 
 /* Close Button */
-#closeDialog {
-background: var(--primary-color);
-color: var(--background-color);
-padding: 10px 18px;
-border: none;
-border-radius: 8px;
-font-size: 1rem;
-cursor: pointer;
-transition: 0.2s ease;
-width: 50%;
-display: block;      /* make it a block element */
-margin: 20px auto 0; /* top 20px, auto left/right, 0 bottom */
-text-align: center;
-}
+
 
 
 #closeDialog:hover {
