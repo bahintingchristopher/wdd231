@@ -45,17 +45,20 @@
 <main>
    <div class="join-form">
 
+   
+
   <form method="get" action="thanks.html">
 
     <div class="form-label">
+       <h1>INFORMATION:</h1>
     <label>
       First Name:
-      <input id="firstName" type="text" name="firstName" title="Applicant First Name" required autocomplete="given-name" placeholder="Your First Name, Example: Christopher">
+      <input id="firstName" type="text" name="firstName" title="Applicant First Name" required autocomplete="given-name" placeholder="Your First Name, Example: Rodrigo">
     </label>
 
     <label>
       Last Name:
-      <input id="lastName" type="text" name="lastName" title="Applicant Last Name" required autocomplete="family-name" placeholder="Your Last Name, Example: Bahinting">
+      <input id="lastName" type="text" name="lastName" title="Applicant Last Name" required autocomplete="family-name" placeholder="Your Last Name, Example: Duterte">
     </label>
 
         <label>
@@ -65,13 +68,13 @@
 
     <label>
       Mobile Phone:
-      <input id="phone" type="tel" name="mobile" title="Mobile Phone Number" required autocomplete="tel" placeholder="09121212981">
+      <input id="phone" type="tel" name="mobile" title="Mobile Phone Number" required autocomplete="tel" placeholder= "Your Phone, Example: 09121212981">
     </label>
 
     <label>
       Business / Organization Name:
-      <input  id="organizationTitle"   type="text"   name="orgTitle"   title="Title in Organization"   autocomplete="organization-title" 
-              pattern="[A-Za-z\s\-]{7,}"   placeholder="At least 7 characters, letters, hyphens, spaces">
+      <input  id="organizationTitle"   type="text"   name="orgTitle"   title="Name in Organization"   autocomplete="organization-title" 
+                 placeholder="Business Name, Ex: ABC Hardware">
     </label>
 
 
@@ -88,7 +91,13 @@
 
     <label>
       Organization Description:
-      <textarea name="orgDescription" title="Organization Description"></textarea>
+      <textarea name="orgDescription" title="Organization Description" placeholder="Details about your Organization"></textarea>
+    </label>
+
+     <label>
+      Position / Designation Title:
+      <input  id="designationTitle"   type="text"   name="designationTitle"   title="Designation in Organization"   autocomplete="organization-title" 
+              pattern="[A-Za-z\s\-]{7,}"   placeholder="Example: CEO, President, Manager (atleast 7 characters, letters, hyphens, spaces)">
     </label>
 
     <input type="hidden" name="timestamp" id="timestamp">

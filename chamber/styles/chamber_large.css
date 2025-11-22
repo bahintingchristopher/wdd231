@@ -115,15 +115,14 @@ border-radius: 8px;
 }
 
 .join-form form {
-  padding-top: 50px;
-width: 100%;
+ width: 100%;
 }
 
 /* Form fields: responsive grid */
 form .form-label {
 display: grid;
 grid-template-columns: 1fr;
-gap: 1rem;
+gap: .8rem;
 padding-right: 30px;
 }
 
@@ -153,6 +152,7 @@ background: var(--primary-color);
 margin: 0 auto;
 color: var(--background-color);
 padding: 10px;
+margin-top: 15px;
 width: 200px;
 border-radius: 10px;
 font-size: 1.2rem;

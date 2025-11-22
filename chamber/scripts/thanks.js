@@ -21,6 +21,7 @@
     const mobile = myInfo.get('mobile');
     const membership = myInfo.get('membership');
     const orgDescription = myInfo.get('orgDescription');
+     const designation = myInfo.get('designationTitle');
 
     document.querySelector('#results').innerHTML = `
     <h2>These are the details from your submission:</h2>
@@ -32,9 +33,10 @@
     <p><strong>Timestamp:</strong> ${new Date().toLocaleString()}</p>
 
 
-    <h3>Your Membership Level desired are:</h3>
+    <h3>Other Details:</h3>
     <p><strong>Membership Level:</strong> ${membership.toUpperCase()}</p>
     <p><strong>Organization Description:</strong> ${orgDescription}</p>
+     <p><strong>Position / Designation Title:</strong> ${designation}</p>
     
     `;
 

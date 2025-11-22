@@ -537,6 +537,11 @@ gap: 1rem;
 padding-right: 10px;
 }
 
+.form-label h1 {
+  margin-left: -1px;
+  text-decoration: underline;
+}
+
 form .form-label label {
 display: flex;
 flex-direction: column;
@@ -560,23 +565,26 @@ background-color: var(--background-color);
 /* Submit button */
 #fire {
 display: block;
-background: var(--primary-color);
+background: var(--background-color);
 margin: 0 auto;
-color: var(--background-color);
+color: var(--primary-color);
 padding: 10px;
 width: 200px;
+border: 2px solid var(--primary-color);
 border-radius: 10px;
 font-size: 1.2rem;
 }
 
 #fire:hover {
-background: var(--accent2);
+background: var(--primary-color);
+color: var(--background-color);
 font-size: 1.3rem;
 cursor: pointer;
 }
 
 .membership-container {
 border-left: 20px;
+margin-top: 20px;
 background-color: var(--accent2);
 }
 
