@@ -644,13 +644,12 @@ border-radius: 10px;
 .card a:hover {
 background-color: var(--hover);
 cursor: pointer; ;
-
 }
-
+/* 
 .card {
 position: relative;
 overflow: hidden;
-}
+} */
 
 .flower-rain {
 position: absolute;
