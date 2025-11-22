@@ -786,7 +786,7 @@ font-size: 1.2rem;
 /* Container for falling gifts */
 .gift-container {
 position: fixed; /* stays over the page */
-top: 120px;
+top: 250px;
 left: 0;
 width: 100%;
 height: 100vh;
