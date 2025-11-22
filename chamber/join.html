@@ -61,6 +61,13 @@
       <input id="lastName" type="text" name="lastName" title="Applicant Last Name" required autocomplete="family-name" placeholder="Your Last Name, Example: Duterte">
     </label>
 
+     <label>
+      Organization Title:
+      <input
+        id="designationTitle"     type="text"    name="designationTitle"    title="Enter organizational title (letters, spaces, hyphens only; minimum 7 characters)"
+        autocomplete="organization-title"    pattern="[A-Za-z\s\-]{7,}"    placeholder="Example: President, General Manager, Senior Officer"      required>
+    </label>
+
         <label>
       Email:
       <input id="email" type="email" name="email" title="Email Address" required autocomplete="email" placeholder="your@email.com">
@@ -94,11 +101,8 @@
       <textarea name="orgDescription" title="Organization Description" placeholder="Details about your Organization"></textarea>
     </label>
 
-     <label>
-      Position / Designation Title:
-      <input  id="designationTitle"   type="text"   name="designationTitle"   title="Designation in Organization"   autocomplete="organization-title" 
-              pattern="[A-Za-z\s\-]{7,}"   placeholder="Example: CEO, President, Manager (atleast 7 characters, letters, hyphens, spaces)">
-    </label>
+   
+
 
     <input type="hidden" name="timestamp" id="timestamp">
      </div>
