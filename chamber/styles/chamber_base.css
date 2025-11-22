@@ -516,13 +516,17 @@ gap: 20px;
 padding: 20px;
 }
 
+form  {
+    border-bottom: 5px solid var(--primary-color);
+    padding-bottom: 40px;
+    margin: 0 auto;
+}
+
 /* LEFT COLUMN: FORM */
 .join-form {
 background-color: var(--background-color);
 padding: 20px;
 border-radius: 8px;
-
-
 }
 
 .join-form form {
@@ -584,7 +588,7 @@ cursor: pointer;
 
 .membership-container {
 border-left: 20px;
-margin-top: 20px;
+margin-top: 60px;
 background-color: var(--accent2);
 }
 
@@ -620,6 +624,7 @@ box-shadow: 0 0 5px var(--primary-color);
 position: relative;
 overflow: hidden;
 height: 120px;
+padding-bottom: 30px;
 }
 
 .card h3 {
@@ -649,7 +654,7 @@ cursor: pointer;
 position: absolute;
 top: 0;
 right: 0;          /* move it to the right */
-width: 80%;        /* only cover right 40% of card */
+width: 50%;        /* only cover right 40% of card */
 height: 100%;
 overflow: hidden;
 opacity: 0;           
