@@ -166,7 +166,6 @@ font-size: 1.2rem;
 
 #fire:hover {
 background: var(--accent2);
-font-size: 1.3rem;
 cursor: pointer;
 }
 
