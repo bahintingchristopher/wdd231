@@ -105,6 +105,14 @@ gap: 20px;
 padding: 20px;
 }
 
+form  {
+    border-bottom: none;
+    padding-bottom: 40px;
+    margin: 0 auto;
+}
+
+
+
 /* LEFT COLUMN: FORM */
 .join-form {
 display: grid;
