@@ -571,9 +571,9 @@ background-color: var(--background-color);
 /* Submit button */
 #fire {
 display: block;
-background: var(--background-color);
+background: var(--primary-color);
 margin: 0 auto;
-color: var(--primary-color);
+color: var(--background-color);
 padding: 10px;
 width: 250px;
 height: 44px;
@@ -583,7 +583,7 @@ font-size: 1rem;
 }
 
 #fire:hover {
-background: var(--primary-color);
+background: var(--secondary);
 color: var(--background-color);
 cursor: pointer;
 }
