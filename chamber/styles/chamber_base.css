@@ -623,7 +623,7 @@ flex: 1 1 100%;
 box-shadow: 0 0 5px var(--primary-color);
 position: relative;
 overflow: hidden;
-height: 120px;
+height: auto;
 padding-bottom: 30px;
 }
 
