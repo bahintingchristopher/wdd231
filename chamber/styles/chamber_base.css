@@ -550,7 +550,6 @@ form .form-label label {
 display: flex;
 flex-direction: column;
 font-size: 18px;
-
 }
 
 /* Input, select, textarea full width */
@@ -576,11 +575,11 @@ background: var(--background-color);
 margin: 0 auto;
 color: var(--primary-color);
 padding: 10px;
-width: 200px;
+width: 250px;
 height: 44px;
 border: 2px solid var(--primary-color);
 border-radius: 10px;
-font-size: 1.2rem;
+font-size: 1rem;
 }
 
 #fire:hover {
