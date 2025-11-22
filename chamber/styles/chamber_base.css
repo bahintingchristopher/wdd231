@@ -659,13 +659,13 @@ z-index: 5;
 
 
 /* Show flower layer when card is hovered */
-.card:hover .flower-rain {
+.card .flower-rain {
 opacity: 3;
 }
 
 
 /* Trigger animation on hover */
-.card:hover .flower {
+.card .flower {
 animation-play-state: running;
 }
 
