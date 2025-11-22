@@ -538,8 +538,8 @@ padding-right: 10px;
 }
 
 .form-label h1 {
-  margin-left: -1px;
-  text-decoration: underline;
+margin-left: -1px;
+text-decoration: underline;
 }
 
 form .form-label label {
@@ -621,8 +621,6 @@ position: relative;
 overflow: hidden;
 height: 120px;
 overflow: hidden;
-
-
 }
 
 .card h3 {
@@ -643,19 +641,20 @@ border-radius: 10px;
 
 .card a:hover {
 background-color: var(--hover);
-cursor: pointer; ;
+cursor: pointer; 
 }
-/* 
-.card {
+
+
+/* .card {
 position: relative;
 overflow: hidden;
-} */
+} */ 
 
 .flower-rain {
 position: absolute;
 top: 0;
-left: 0;
-width: 100%;
+right: 0;          /* move it to the right */
+width: 80%;        /* only cover right 40% of card */
 height: 100%;
 overflow: hidden;
 opacity: 0;           
@@ -663,9 +662,10 @@ transition: opacity 0.3s ease;
 z-index: 5;
 }
 
+
 /* Show flower layer when card is hovered */
 .card:hover .flower-rain {
-opacity: 1;
+opacity: 3;
 }
 
 
@@ -679,15 +679,32 @@ animation-play-state: running;
 position: absolute;
 font-size: 1.5rem;
 top: -50px;
-animation: fall 4s linear infinite;
+animation: fall 2s linear infinite;
 animation-play-state: paused;  /* start paused */
 }
 
 /* RANDOM POSITIONS */
-.flower:nth-child(1) { left: 10%; animation-delay: 0s; }
-.flower:nth-child(2) { left: 40%; animation-delay: 0.4s; }
-.flower:nth-child(3) { left: 70%; animation-delay: 0.8s; }
-.flower:nth-child(4) { left: 20%; animation-delay: 1.2s; }
+.flower:nth-child(1)  { left: 5%;  animation-delay: 0s; }
+.flower:nth-child(2)  { left: 10%; animation-delay: 0.2s; }
+.flower:nth-child(3)  { left: 15%; animation-delay: 0.4s; }
+.flower:nth-child(4)  { left: 20%; animation-delay: 0.6s; }
+.flower:nth-child(5)  { left: 25%; animation-delay: 0.8s; }
+.flower:nth-child(6)  { left: 30%; animation-delay: 1s; }
+.flower:nth-child(7)  { left: 35%; animation-delay: 1.2s; }
+.flower:nth-child(8)  { left: 40%; animation-delay: 1.4s; }
+.flower:nth-child(9)  { left: 45%; animation-delay: 1.6s; }
+.flower:nth-child(10) { left: 50%; animation-delay: 1.8s; }
+.flower:nth-child(11) { left: 55%; animation-delay: 2s; }
+.flower:nth-child(12) { left: 60%; animation-delay: 2.2s; }
+.flower:nth-child(13) { left: 65%; animation-delay: 2.4s; }
+.flower:nth-child(14) { left: 70%; animation-delay: 2.6s; }
+.flower:nth-child(15) { left: 75%; animation-delay: 2.8s; }
+.flower:nth-child(16) { left: 80%; animation-delay: 3s; }
+.flower:nth-child(17) { left: 85%; animation-delay: 3.2s; }
+.flower:nth-child(18) { left: 90%; animation-delay: 3.4s; }
+.flower:nth-child(19) { left: 95%; animation-delay: 3.6s; }
+.flower:nth-child(20) { left: 100%; animation-delay: 3.8s; }
+
 
 @keyframes fall {
 0% { transform: translateY(0) rotate(0deg); opacity: 1; }
@@ -696,30 +713,25 @@ animation-play-state: paused;  /* start paused */
 
 /* MODAL STYLES *//* Base dialog styling */
 #mydialog {
-width: 85%;
-max-width: 450px;
+width: 80%;
+max-width: 500px;
 padding: 20px;
 border: none;
 border-radius: 12px;
-background: var(--background-color);
 box-shadow: 0 10px 30px var(--primary-color);
+background-color: var(--background-color);
+color: var(--primary-color);
 animation: fadeIn 0.3s ease-out;
 }
+
+
 
 /* Backdrop dim background */
 #mydialog::backdrop {
 background: rgba(0,0,0,0.8);
 }
 
-/* Text inside dialog */
-#mydialog {
-background-color: var(--background-color); 
-color: var(--primary-color);            
-padding: 20px;
-border-radius: 10px;
-width: 80%;
-max-width: 500px;
-}
+
 
 
 #mydialog, #mydialog h2, #mydialog p {
@@ -757,26 +769,26 @@ to   { opacity: 1; transform: scale(1); }
 
 /* THANKS HTML */
 #results h2 {
- display: inline-block; /* allows vertical margins */
-  margin-top: 40px;
-  margin-bottom: -10px;
-  margin-left: 15px;
-  padding: 15px;
-  color: var(--background-color);
-   background: var(--primary-color);
-  border-radius: 4px;  
+display: inline-block; /* allows vertical margins */
+margin-top: 40px;
+margin-bottom: -10px;
+margin-left: 15px;
+padding: 15px;
+color: var(--background-color);
+background: var(--primary-color);
+border-radius: 4px;  
 }
 
 #results h3 {
-  display: inline-block; /* allows vertical margins */
-  margin-top: 40px;
-  margin-bottom: -10px;
-  margin-left: 15px;
-  padding: 15px;
-  color: var(--background-color);
-   background: var(--primary-color);
-   font-size: 1.5rem;
-  border-radius: 4px;  
+display: inline-block; /* allows vertical margins */
+margin-top: 40px;
+margin-bottom: -10px;
+margin-left: 15px;
+padding: 15px;
+color: var(--background-color);
+background: var(--primary-color);
+font-size: 1.5rem;
+border-radius: 4px;  
 }
 
 
