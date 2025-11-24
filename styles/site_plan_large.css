@@ -1,0 +1,33 @@
+@media only screen and (min-width:38rem) {
+header, main, nav, footer {
+    max-width: 100%; 
+    margin: 0 auto;
+}
+
+
+
+.font {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.font img {
+    max-width: 100%;
+    height: 100px;
+    width: 500px;
+    justify-content: space-evenly;
+
+}
+
+
+.wire-image {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding-right: 70px;
+}
+
+
+
+}

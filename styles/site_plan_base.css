@@ -1,0 +1,187 @@
+/* =======================
+   Mobile View CSS
+======================= */
+
+/* Variables */
+:root {
+    --background: #DCCDE8;
+    --nav: #B37BA4;
+    --mainbody: #00100B;
+    --highlights: #D99AC5;
+    --accent-CTA: #14BDEB;
+
+    --font-headings: 'Cormorant Garamond', serif;
+    --font-body: 'Arimo', sans-serif;
+    --site-name: 'Caramel', cursive;
+}
+
+ 
+body {
+    font-family: var(--font-body);
+    color: var(--mainbody);
+    background-color: var(--background);
+    line-height: 1.5;
+    padding: 10px;
+}
+
+ 
+header {
+    text-align: center;
+    padding: 15px 0;
+    background-color: var(--nav);
+    color: var(--mainbody);
+    border-radius: 5px;
+}
+
+header h1 {
+    font-family: var(--site-name);
+    font-size: 4rem;
+}
+
+ 
+h2 {
+    font-family: var(--font-headings);
+    color: var(--mainbody);
+    margin-bottom: 8px;
+    font-size: 1.4rem;
+    }
+
+ 
+p {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+ 
+section {
+    padding: 15px;
+    background-color: var(--background);
+    border-radius: 5px;
+}
+
+ 
+ 
+a {
+    color: var(--accent-CTA);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+.scenario {
+    background-color: var(--highlights);
+}
+
+.scenario h2 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.colors {
+    background-color: var(--accent-CTA);
+}
+
+.colors h2 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.colors img {
+   max-width: 100%;
+   border: 5px solid var(--mainbody);
+}
+ 
+.fonts {
+    border: 4px solid var(--mainbody);
+}
+
+.fonts h2 {
+    text-align: center;
+    text-decoration: underline;
+    color: var(--mainbody);
+}
+
+.font {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.font img {
+    max-width: 100%;
+
+}
+
+.wireframe {
+    background-color: var(--accent-CTA);
+}
+
+.wireframe h2 {
+    color: var(--mainbody);
+    text-align: center;
+    text-decoration: underline;
+}
+
+ .wireframe a {
+    display: block;
+    color: var(--mainbody);
+    text-align: center;
+    margin-top: 20px;
+   
+    
+}
+.wire-image {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.wire-image img {
+    justify-content: center;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+
+/* ************FOOTER************ */
+footer {
+background-color: var(--background-color);
+padding: 1rem 10px;
+text-align: center;
+}
+
+footer p {
+margin: 0;
+padding-bottom: 10px;
+color: var(--primary-color);
+font-size: .9rem;
+}
+
+.social {
+display: flex;
+justify-content: center;
+column-gap: 8px;
+padding-bottom: 20px;
+}
+
+.social a{
+display: flex;
+justify-content: center;  
+align-items: center;  
+width: 44px;
+height: 44px;
+border: black solid 1px;
+border-radius: 22px;
+}
+
+.social img {
+width: 22px;
+height: 22px;
+}
+
+.social a:hover{
+background-color: var(--background-color);
+}
