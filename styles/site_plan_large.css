@@ -4,7 +4,10 @@ header, main, nav, footer {
     margin: 0 auto;
 }
 
-
+.colors img {
+   max-width: 99%;
+  margin: 0 auto;
+}
 
 .font {
     display: grid;
@@ -19,6 +22,8 @@ header, main, nav, footer {
     justify-content: space-evenly;
 
 }
+
+
 
 
 .wire-image {

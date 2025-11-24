@@ -1,8 +1,4 @@
-/* =======================
-   Mobile View CSS
-======================= */
 
-/* Variables */
 :root {
     --background: #DCCDE8;
     --nav: #B37BA4;
@@ -10,7 +6,7 @@
     --highlights: #D99AC5;
     --accent-CTA: #14BDEB;
 
-    --font-headings: 'Cormorant Garamond', serif;
+    --font-headings: 'Cormorant Garamond', serif; 
     --font-body: 'Arimo', sans-serif;
     --site-name: 'Caramel', cursive;
 }
@@ -90,7 +86,7 @@ a:hover {
 }
 
 .colors img {
-   max-width: 100%;
+   max-width: 97%;
    border: 5px solid var(--mainbody);
 }
  
