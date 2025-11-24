@@ -69,6 +69,7 @@ a:hover {
 
 .scenario {
     background-color: var(--highlights);
+    margin-bottom: 10px;
 }
 
 .scenario h2 {
@@ -78,6 +79,7 @@ a:hover {
 
 .colors {
     background-color: var(--accent-CTA);
+    margin-bottom: 10px;
 }
 
 .colors h2 {
@@ -92,6 +94,7 @@ a:hover {
  
 .fonts {
     border: 4px solid var(--mainbody);
+    margin-bottom: 10px;
 }
 
 .fonts h2 {
@@ -144,7 +147,7 @@ a:hover {
 
 /* ************FOOTER************ */
 footer {
-background-color: var(--background-color);
+background-color: var(--background);
 padding: 1rem 10px;
 text-align: center;
 }
@@ -152,7 +155,7 @@ text-align: center;
 footer p {
 margin: 0;
 padding-bottom: 10px;
-color: var(--primary-color);
+color: var(--mainbody);
 font-size: .9rem;
 }
 
