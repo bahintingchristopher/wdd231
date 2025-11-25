@@ -47,3 +47,17 @@ places.kananga_famous.forEach(place => {
 
     showHere.appendChild(placeDiv);
 });
+
+
+const latestVisit = localStorage.getItem("latestVisit");
+
+if (latestVisit) {
+    const lastDate = new Date(latestVisit);
+    alert(`Welcome back! Your last visit was on ${lastDate.toLocaleString()}.`);
+} else {
+    alert("Welcome! This is your first visit.");
+}
+
+// Update localStorage with current visit
+const now = new Date();
+localStorage.setItem("latestVisit", now.toISOString());

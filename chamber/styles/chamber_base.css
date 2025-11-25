@@ -861,10 +861,9 @@ opacity: 0;
 
 .place img {
     width: 95%;        /* fill the column width */
-    height: 250px;      /* fixed height */
+    height: autopx;      /* fixed height */
     margin: 0 auto;
-    padding: 10px;
-    
+    padding: 10px;    
 }
 
 
@@ -917,7 +916,8 @@ opacity: 0;
     border: none;
     padding-top: 20px;
     padding-bottom: 20px;
-    text-decoration: underline;  
+    text-decoration: underline; 
+    font-size: .9rem; 
 }
 
 .place button:hover {

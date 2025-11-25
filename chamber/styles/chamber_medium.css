@@ -262,30 +262,36 @@ cursor: pointer;
     grid-area: picture;
     width: 300px;
     padding: 10px;
-}
-
-
-.place img {
-    width: 80%;        /* fill the column width */
-    height: 250px;      /* fixed height */
+    width: 100%;           /* fills the column width */
+    aspect-ratio: 3 / 2;   /* maintains 3:2 ratio */
+    object-fit: cover;      /* crops if the original image is different */
+    display: block;
     margin: 0 auto;
     padding: 10px;
-    
 }
 
+.place img:hover {
+        transform: scale(1.1);
+        filter: brightness(80%);
+        transition: 0.3s ease;
+        width: 150%;
+    }
 
 .place h2 {
     text-align: left;
-    margin-left: 10px;   
+    margin-left: 10px;  
+    padding-left: 5px; 
 }
 
 
 .place p:nth-of-type(1) {
     text-align: left;
+      padding-left: 5px; 
 }
 
 .place p:nth-of-type(2) {
-    text-align: left;     
+    text-align: left;  
+      padding-left: 5px;    
 }
 
 
