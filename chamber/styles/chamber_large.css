@@ -3,4 +3,19 @@
         grid-template-columns: repeat(2, 1fr);  
         gap: 30px;
     }
+
+    
+.place h2 {
+    text-align: left;
+    margin-left: 10px;   
+}
+
+
+.place p:nth-of-type(1) {
+    text-align: left;
+}
+
+.place p:nth-of-type(2) {
+    text-align: left;     
+}
 }

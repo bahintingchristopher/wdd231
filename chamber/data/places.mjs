@@ -67,7 +67,7 @@ export const places = {
       "picture": "./images/masaba_falls.webp"
     },
     {
-      "name": "HISUMCO (Hideco Sugar Milling Company)",
+      "name": "HISUMCO",
       "address": "Brgy. Montebello, Kananga, Leyte",
       "description": "HISUMCO, also known as Hideco Sugar Milling Company, is a key establishment in Kananga's agricultural sector. The sugar mill has been operating for decades, processing sugarcane harvested from nearby barangays. It plays a significant role in the local economy by providing employment, supporting farmers, and contributing to community development. Visitors can learn about the sugar production process, from harvesting to milling, and understand the historical and economic importance of sugarcane in the region. HISUMCO represents both industrial heritage and the backbone of Kananga’s agriculture.",
       "picture": "./images/hisumco.webp"

@@ -242,25 +242,50 @@ cursor: pointer;
 }
 
 /* DISCOVER */
+/* DISCOVER */
 #showHere {
     display: grid;
-    grid-template-columns: 1fr;  
-    gap: 20px;  
+    grid-template-columns: 1fr;
 }
 
-
 .place {
-grid-template-columns:  1fr; /* image column + text column */
-grid-template-areas:       
-    "picture title"
-    "picture address"
-    "picture description"
-    "picture learn-more";      
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* picture | text */
+    grid-template-areas:       
+        "picture title"
+        "picture address"
+        "picture description"
+        "picture learn-more";      
 }
 
 .place img {
-width: 400px;
-padding: 10px;
+    grid-area: picture;
+    width: 300px;
+    padding: 10px;
+}
+
+
+.place img {
+    width: 80%;        /* fill the column width */
+    height: 250px;      /* fixed height */
+    margin: 0 auto;
+    padding: 10px;
+    
+}
+
+
+.place h2 {
+    text-align: left;
+    margin-left: 10px;   
+}
+
+
+.place p:nth-of-type(1) {
+    text-align: left;
+}
+
+.place p:nth-of-type(2) {
+    text-align: left;     
 }
 
 
