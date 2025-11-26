@@ -49,15 +49,78 @@ places.kananga_famous.forEach(place => {
 });
 
 
-const latestVisit = localStorage.getItem("latestVisit");
+// const latestVisit = localStorage.getItem("latestVisit");
 
-if (latestVisit) {
-    const lastDate = new Date(latestVisit);
-    alert(`Welcome back! Your last visit was on ${lastDate.toLocaleString()}.`);
-} else {
-    alert("Welcome! This is your first visit.");
+// if (latestVisit) {
+//     const lastDate = new Date(latestVisit);
+//     const now = new Date();
+
+//     // Calculate difference in days
+//     const diffMs = now - lastDate; 
+//     const diffDays = Math.floor(diffMs / (1000 * 60 * 60 * 24));
+
+//     alert(
+//         `Welcome! Let us know if you have any questions!\n` + //concatenate
+//         `Your last visit was on ${lastDate.toLocaleString()}.\n` +
+//         `That was ${diffDays} day(s) ago.`
+//     );
+// } else {
+//   alert(
+//     `Welcome! Let us know if you have any questions!\n` +
+//     `This is your first visit.`
+//   );
+// }
+
+// localStorage.setItem("latestVisit", new Date().toISOString());
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const banner = document.getElementById("welcomeBanner");
+    const visitMessage = document.getElementById("visit-message");
+    const closeBtn = document.getElementById("closeBanner");
+
+    const lastVisit = localStorage.getItem("lastVisit");
+    const now = Date.now();
+    let message = ""; // hold the final concatenated message.
+
+ 
+   if (!lastVisit) { 
+        message = "Welcome! Let us know if you have any questions.<br>This is your first Visit.";
 }
+    else {
+        const lastTime = Number(lastVisit);
+        const msInDay = 1000 * 60 * 60 * 24;
+        const diffDays = Math.floor((now - lastTime) / msInDay);
 
-// Update localStorage with current visit
-const now = new Date();
-localStorage.setItem("latestVisit", now.toISOString());
+        let secondLine = "";
+
+        if (diffDays < 1) {
+           
+            secondLine = "\nAwsome! Back soon.";
+        } else {
+         
+
+            const dayWord = diffDays === 1 ? "day" : "days";
+            secondLine = `\nYour last visit was ${diffDays} ${dayWord} ago.`;
+
+            secondLine += "\nAwsome! Back soon."; 
+        }
+
+        
+        message = `Welcome! Let us know if you have any questions.\n${secondLine}`;
+    }
+
+
+    visitMessage.textContent = message; 
+
+    
+    localStorage.setItem("lastVisit", now);
+
+    // Close Button functionality
+    closeBtn.addEventListener("click", () => {
+        banner.style.display = "none";
+    });
+
+});

@@ -241,57 +241,62 @@ font-weight: bold;
 cursor: pointer;
 }
 
-/* DISCOVER */
+
 /* DISCOVER */
 #showHere {
-    display: grid;
-    grid-template-columns: 1fr;
+display: grid;
+grid-template-columns: 1fr;
 }
 
 .place {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* picture | text */
-    grid-template-areas:       
-        "picture title"
-        "picture address"
-        "picture description"
-        "picture learn-more";      
+display: grid;
+grid-template-columns: 1fr 1fr; /* picture | text  make the 2 column but in parent(showhere it is only 1 column*/
+grid-template-areas:       
+"picture title"
+"picture address"
+"picture description"
+"picture learn-more";      
 }
 
 .place img {
-    grid-area: picture;
-    width: 300px;
-    padding: 10px;
-    width: 100%;           /* fills the column width */
-    aspect-ratio: 3 / 2;   /* maintains 3:2 ratio */
-    object-fit: cover;      /* crops if the original image is different */
-    display: block;
-    margin: 0 auto;
-    padding: 10px;
+grid-area: picture;
+width: 300px;
+padding: 10px;
+width: 100%;           /* fills the column width */
+aspect-ratio: 3 / 2;   /* maintains 3:2 ratio */
+object-fit: cover;     
+display: block;
+margin: 0 auto;
+padding: 10px;
 }
 
 .place img:hover {
-        transform: scale(1.1);
-        filter: brightness(80%);
-        transition: 0.3s ease;
-        width: 150%;
-    }
+transform: scale(1.1);
+filter: brightness(80%);
+transition: 0.3s ease;
+width: 150%;
+}
 
 .place h2 {
-    text-align: left;
-    margin-left: 10px;  
-    padding-left: 5px; 
+text-align: left;
+margin-left: 10px;  
+padding-left: 5px; 
 }
 
 
 .place p:nth-of-type(1) {
-    text-align: left;
-      padding-left: 5px; 
+text-align: left;
+padding-left: 5px; 
 }
 
 .place p:nth-of-type(2) {
-    text-align: left;  
-      padding-left: 5px;    
+text-align: left;  
+padding-left: 5px;    
+}
+#welcomeBanner #visit-message {
+color: red;
+font-size: 2rem;
+text-align: center;
 }
 
 

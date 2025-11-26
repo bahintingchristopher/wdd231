@@ -1,4 +1,4 @@
-@media (min-width: 1024px) {
+@media (min-width: 64rem) { /*to get it, 1024 / 16 */
     #showHere {
         grid-template-columns: repeat(2, 1fr);  
         gap: 30px;

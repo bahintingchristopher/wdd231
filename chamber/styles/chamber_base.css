@@ -517,9 +517,9 @@ padding: 20px;
 }
 
 form  {
-    border-bottom: 5px solid var(--primary-color);
-    padding-bottom: 40px;
-    margin: 0 auto;
+border-bottom: 5px solid var(--primary-color);
+padding-bottom: 40px;
+margin: 0 auto;
 }
 
 /* LEFT COLUMN: FORM */
@@ -830,97 +830,139 @@ opacity: 0;
 
 /* DISCOVER PAGE */
 #showHere {
-    display: grid;
-   }
+display: grid;
+}
 
 
 .place {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 0;
-    border: 25px solid var(--accent2);
-    grid-template-areas:
-    
-        "title"
-        "address"
-        "picture"
-        "description"
-        "learn-more";
-        
+display: grid;
+grid-template-columns: 1fr;
+gap: 0;
+border: 25px solid var(--accent2);
+grid-template-areas:
+
+"title"
+"address"
+"picture"
+"description"
+"learn-more";
+
 
 }
 
 .place h2 {
-    grid-area: title;
-    text-align: left;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 5px;
-    
+grid-area: title;
+text-align: left;
+margin-left: 10px;
+margin-right: 10px;
+margin-bottom: 5px;
+
 }
 
 .place img {
-    width: 95%;        /* fill the column width */
-    height: autopx;      /* fixed height */
-    margin: 0 auto;
-    padding: 10px;    
+width: 95%;        /* fill the column width */
+height: autopx;      /* fixed height */
+margin: 0 auto;
+padding: 10px;    
 }
 
 
 
 
 .place p:nth-of-type(1) {
-    grid-area: address;
-    color: var(--primary-color);
-    text-align: justify;
-    hyphens: auto;
-    margin-left: 10px;
-    margin-right: 10px;
+grid-area: address;
+color: var(--primary-color);
+text-align: justify;
+hyphens: auto;
+margin-left: 10px;
+margin-right: 10px;
 }
 
 .place p:nth-of-type(2) {
-    grid-area: description;
-    color: var(--primary-color);
-    text-align: justify;
-    hyphens: auto;
-    max-width: 100%;
-    margin-left: 10px;
-    margin-right: 10px;
-      
+grid-area: description;
+color: var(--primary-color);
+text-align: justify;
+hyphens: auto;
+max-width: 100%;
+margin-left: 10px;
+margin-right: 10px;
+
 }
 
 .place p {
-    display: grid;
-    grid-template-columns: 1fr;
-    column-gap: 8px; /* space between label and text */
-    align-items: start;
+display: grid;
+grid-template-columns: 1fr;
+column-gap: 8px; /* space between label and text */
+align-items: start;
 }
 
 .place p .label {
-    font-weight: bold;
-    white-space: nowrap; /* prevents Address: from breaking */
+font-weight: bold;
+white-space: nowrap; /* prevents Address: from breaking */
 }
 
 .place p {
-    margin: 5px 0;
+margin: 5px 0;
 }
 
 .place p .label {
-    font-weight: bold;
-    white-space: nowrap; /* prevents Address: from breaking */
+font-weight: bold;
+white-space: nowrap; /* prevents Address: from breaking */
 }
 
 .place button {
-    grid-area: learn-more; 
-    background-color: transparent; /*with transparent the color inhiret the parent*/
-    border: none;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    text-decoration: underline; 
-    font-size: .9rem; 
+grid-area: learn-more; 
+background-color: transparent; /*with transparent the color inhiret the parent*/
+border: none;
+padding-top: 20px;
+padding-bottom: 20px;
+text-decoration: underline; 
+font-size: .9rem; 
 }
 
 .place button:hover {
-    color: var(--primary-color);
-    cursor: pointer;    
+color: var(--primary-color);
+cursor: pointer;    
+}
+
+
+/* WELCOME BANNER */
+#welcomeBanner {
+position: fixed;
+bottom: 20px;           /* small gap from bottom */
+left: 50%;
+transform: translateX(-50%);
+width: 100%;             /* use most of the screen width */
+background: greenyellow;
+padding: 15px 20px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+box-sizing: border-box; /* ensures padding is included in width */
+border-radius: 8px;
+z-index: 9999;
+
+}
+
+#visit-message {
+color: red;
+font-size: 2rem;
+text-align: center;
+}
+
+#closeBanner {
+cursor: pointer;
+font-size: 24px;
+padding: 0 10px;
+color: var(--primary-color);
+font-size: 2rem;
+
+}
+
+#closeBanner:hover {
+color: greenyellow;
+background-color: red;
+padding: 0 1rem; 
+border-radius: 5px;
+top:0;
 }
