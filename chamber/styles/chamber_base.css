@@ -900,8 +900,6 @@ margin: 5px 0;
 .place p .label {
 font-weight: bold;
 white-space: nowrap; /* prevents Address: from breaking */
-font-weight: bold;
-white-space: nowrap; /* prevents Address: from breaking */
 }
 
 .place button {
@@ -946,7 +944,6 @@ text-align: center;
 
 #closeBanner {
 cursor: pointer;
-font-size: 24px;
 padding: 0 10px;
 color: var(--primary-color);
 font-size: 2rem;
