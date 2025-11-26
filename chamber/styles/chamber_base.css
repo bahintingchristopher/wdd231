@@ -861,7 +861,7 @@ margin-bottom: 5px;
 
 .place img {
 width: 95%;        /* fill the column width */
-height: autopx;      /* fixed height */
+height: auto;      /* fixed height */
 margin: 0 auto;
 padding: 10px;    
 }
