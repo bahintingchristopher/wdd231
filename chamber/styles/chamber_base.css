@@ -894,18 +894,12 @@ display: grid;
 grid-template-columns: 1fr;
 column-gap: 8px; /* space between label and text */
 align-items: start;
+margin: 5px 0;
 }
 
 .place p .label {
 font-weight: bold;
 white-space: nowrap; /* prevents Address: from breaking */
-}
-
-.place p {
-margin: 5px 0;
-}
-
-.place p .label {
 font-weight: bold;
 white-space: nowrap; /* prevents Address: from breaking */
 }
