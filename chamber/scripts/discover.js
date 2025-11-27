@@ -100,7 +100,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (diffDays < 1) {
            
-            secondLine = "\nBack so sson! Awsome!";
+            secondLine = "\nBack so soon! Awsome!";
         } else {
          
 
