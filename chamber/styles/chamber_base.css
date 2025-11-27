@@ -113,6 +113,16 @@ color: var(--hover);
 text-decoration: underline;
 }
 
+.navigation .active-page a {
+    text-decoration: underline;
+    text-decoration-color: var(--background-color);
+    text-underline-position: under;
+    text-underline-offset: 2px;
+    color: var(--accent2);
+    font-size: larger;
+
+}
+
 h1 {
 margin-left: 10px;
 }
