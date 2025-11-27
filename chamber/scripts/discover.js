@@ -100,14 +100,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (diffDays < 1) {
            
-            secondLine = "\nAwsome! Back soon.";
+            secondLine = "\nBack so sson! Awsome!";
         } else {
          
 
             const dayWord = diffDays === 1 ? "day" : "days";
             secondLine = `\nYour last visit was ${diffDays} ${dayWord} ago.`;
 
-            secondLine += "\nAwsome! Back soon."; 
+            secondLine += "\nBack so soon! Awsome!"; 
         }
 
         
