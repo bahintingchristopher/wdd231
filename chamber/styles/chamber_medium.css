@@ -262,7 +262,6 @@ grid-template-areas:
 grid-area: picture;
 width: 300px;
 padding: 10px;
-width: 100%;           /* fills the column width */
 aspect-ratio: 3 / 2;   /* maintains 3:2 ratio */
 object-fit: cover;     
 display: block;

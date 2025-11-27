@@ -543,7 +543,7 @@ border-radius: 8px;
 width: 100%;
 }
 
-/* 1-column layout for form fields (mobile) */
+
 form .form-label {
 display: grid;
 grid-template-columns: 1fr; /* single column */
@@ -871,7 +871,6 @@ margin-bottom: 5px;
 
 .place img {
 width: 95%;        /* fill the column width */
-height: auto;      /* fixed height */
 margin: 0 auto;
 padding: 10px;    
 }

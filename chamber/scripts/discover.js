@@ -9,6 +9,8 @@ places.kananga_famous.forEach(place => {
 
     const picture = document.createElement("img");
     picture.src = place.picture;
+    picture.style.width = "300";
+    picture.style.height = "200";
     picture.alt = place.name;
     picture.loading = "lazy"; 
     placeDiv.appendChild(picture);
@@ -87,12 +89,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
  
    if (!lastVisit) { 
-        message = "Welcome! Let us know if you have any questions.<br>This is your first Visit.";
+        message = "Welcome! Let us know if you have any questions.This is your first VISIT.";
 }
     else {
         const lastTime = Number(lastVisit);
         const msInDay = 1000 * 60 * 60 * 24;
-        const diffDays = Math.floor((now - lastTime) / msInDay);
+        const diffDays = Math.floor((now - lastTime) /  msInDay);
 
         let secondLine = "";
 
