@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="author" content="Christopher T. Bahinting"> 
+    <meta name="description" content="WDD 231 - Bahins Car Sales as Final Project by  Christopher T. Bahinting.">
+    <title> Inventory page of Final Project</title>
+
+    <meta property="og:title" content="Bahins Car Sales">
+    <meta property="og:description" content="Your trusted partner for quality vehicles and exceptional service.">
+    <meta property="og:image" content="https://bahintingchristopher.github.io/wdd231/finalproject/images/final_project_logo.svg">  
+    <meta property="og:url" content="https://bahintingchristopher.github.io/wdd231/finalproject/index.html">
+    <meta property="og:type" content="website">
+
+     <link rel="icon" href="images/finalproject_favicon.ico">
+  
+    
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/final_base.css">
+     <link rel="stylesheet" href="styles/final_medium.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Caramel&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+
+
+
+
+</head>
+
+<body>
+ <div class="menu-container">
+    <header>
+        <div class="left-section">
+            <img src="images/final_project_logo.svg" alt="Site Logo" width="60">
+            <span class="site-title">Bahins Car Sales</span>
+        </div>
+
+        <nav id="nav-bar" class="navigation">
+            <ul>
+          <li ><a href="index.html">HOME</a></li>
+          <li  ><a href="inventory.html">INVENTORY</a></li>
+          <li class="active-page"><a href="contact.html">CONTACT US</a></li>
+            </ul>
+        </nav>
+
+        <button id="ham-btn" class="hamburger" aria-label="Open menu"></button>
+    </header>
+</div>
+
+
+<main>
+
+
+    <form class="test-drive-form" method="post" action="thankyou.html">
+        <h1>Schedule a Test Drive</h1>
+
+        <!-- Customer Info -->
+        <label>
+            Full Name:
+            <input type="text" name="fullName" required placeholder="Your Full Name">
+        </label>
+
+        <label>
+            Date of Birth:
+            <input type="date" name="dob" required>
+        </label>
+
+        <label>
+            Contact Number:
+            <input type="tel" name="phone" required placeholder="09123456789" pattern="[0-9]{10,11}">
+        </label>
+
+        <label>
+            Email Address:
+            <input type="email" name="email" required placeholder="you@example.com">
+        </label>
+
+        <!-- Driver Info -->
+        <label>
+            Driver’s License Number:
+            <input type="text" name="licenseNumber" required placeholder="Driver License No.">
+        </label>
+
+        <label>
+            License Expiry Date:
+            <input type="date" name="licenseExpiry" required>
+        </label>
+
+        <label>
+            Driving Experience (Years):
+            <input type="text" name="experience" required placeholder="e.g., 5">
+        </label>
+
+        <!-- Vehicle Info -->
+        <label>
+            Vehicle Model Requested:
+            <input type="text" name="vehicleModel" required placeholder="Car Model">
+        </label>
+
+        <label>
+            Preferred Date:
+            <input type="date" name="testDriveDate" required>
+        </label>
+
+        <label>
+            Preferred Time:
+            <input type="time" name="testDriveTime" required>
+        </label>
+
+        <label>
+            Number of Passengers:
+            <input type="text" name="passengers" placeholder="Optional">
+        </label>
+
+        <label>
+            Special Requests / Notes:
+            <textarea name="notes" placeholder="Optional notes or requests"></textarea>
+        </label>
+
+        <!-- Submit Button -->
+        <button id="inventory-button" type="submit">Book Test Drive</button>
+    </form>
+
+</main>
+
+<script src="scripts/final.js"></script>
+<script src="scripts/inventory.js"></script>
+   
+      <footer>
+       
+
+        <div class="social">
+             <a href="https://github.com/bahintingchristopher/wdd231"  target="_blank"><img src="images/github.svg" alt="github"   width="16"  height="16"></a>
+            <a href="www.linkedin.com/in/cbahinting"  target="_blank"><img src="images/linkedin.svg" alt="linkedin"   width="16"  height="16"></a>
+            <a href="https://www.facebook.com/profile.php?id=61579616556378"  target="_blank"><img src="images/facebook.svg" alt="facebook"   width="16"  height="16"></a>
+            <a href="https://x.com/"  target="_blank"><img src="images/twitter-x.svg" alt="twitter-x" width="16"  height="16"></a>
+        </div>
+
+        <div class="author">
+        <h2>WDD231 Class Project</h2>
+        <p> Christopher T. Bahinting <br>
+        &copy; <span id="currentYear"></span>  | Philippines
+        </p>
+        <p id="lastModified"></p>
+    </div>
+        
+        
+
+    </footer>
+</body>
+</html>
