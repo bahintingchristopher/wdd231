@@ -275,3 +275,84 @@ footer .social img {
   color: var(--mainbody);
   font-size: 1.6rem;
 }
+
+
+/* INVENTORY */
+.inventory-cta {
+  padding-top: 20px;
+  text-align: center;
+  margin: 20px 0;
+  font-size: 1.5rem;
+  border: var(--mainbody) solid 2px;
+  margin-right: 10px;
+  margin: 10px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+}
+
+.cars-container {
+    border: 2px solid var(--mainbody);   
+    border-radius: 10px;
+    padding: 10px;
+    margin: 50px;
+    background-color: var(--background);
+}
+
+dialog {
+    width: 80%;           
+    max-width: 400px;     
+    border: none;
+    border-radius: 12px;
+    text-align: center;
+    background-color: var(--highlights);
+    color: var(--mainbody);
+}
+
+/* Modal header styling */
+dialog .dialog-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px; /* space below header */
+    padding: 0;          /* remove extra padding */
+}
+
+/* Remove default margins from headings inside modal */
+ 
+dialog p {
+    margin: 0; 
+    font-size: .9rem; 
+}
+
+dialog h2, 
+dialog h3 {
+    margin: 0; 
+    font-size: 1.3rem; 
+}
+  
+.dialog-header #closeDialog {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;  
+    border: 2px solid var(--mainbody);
+    border-radius: 8px;
+}
+
+.adv-btn {
+position: absolute;
+bottom: 10px;
+left: 50%;
+transform: translateX(-50%);
+background-color: var(--background);
+color: var(--mainbody);
+border: none;
+border-radius: 8px;
+cursor: pointer;
+font-size: 1rem;
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.8);  
+              
+}

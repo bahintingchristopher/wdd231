@@ -12,7 +12,6 @@ hamburger.addEventListener('click', () => {
 
 
 //    for car data
-// Wait for DOM to load
 document.addEventListener('DOMContentLoaded', () => {
     const carsContainer = document.getElementById('cars-container');    
 
@@ -41,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
             card.classList.add("car-container");
 
            card.innerHTML = `
-    <img src="${car.image}" alt="${car.make} ${car.model}" width="300" height="200" loading="lazy">
+    <img src="${car.image}" alt="${car.make} ${car.model}" width="300" height="200" loading="lazy" decoding="async">
 
     <div class="car-info">
         <span class="make"><strong>Make:</strong> ${car.make}</span>
