@@ -48,6 +48,14 @@ padding-top: 10px;
     font-weight: bold;
 }
 
+/* for my wayfinding */
+.active-page{
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    font-weight: bold;
+    
+}
+
 .navigation ul {
     display: flex;
     flex-direction: column;
@@ -106,12 +114,12 @@ footer {
     text-align: center;
     padding: 20px;
     background-color: var(--nav);
-    color: var(--background);
+    color: var(--mainbody);
     margin-top: 30px;
 }
 
 footer a {
-    color: var(--background);
+    color: var(--mainbody);
     text-decoration: none;
     font-weight: bold;
 }
@@ -279,7 +287,6 @@ footer .social img {
 
 /* INVENTORY */
 .inventory-cta {
-  padding-top: 20px;
   text-align: center;
   margin: 20px 0;
   font-size: 1.5rem;
@@ -294,13 +301,13 @@ footer .social img {
     border: 2px solid var(--mainbody);   
     border-radius: 10px;
     padding: 10px;
-    margin: 50px;
+    margin: 10px;
     background-color: var(--background);
 }
 
 dialog {
     width: 80%;           
-    max-width: 400px;     
+    max-width: 375px;     
     border: none;
     border-radius: 12px;
     text-align: center;
@@ -313,11 +320,18 @@ dialog .dialog-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 10px; /* space below header */
-    padding: 0;          /* remove extra padding */
-}
+    margin-bottom: 10px;  
+    padding: 0; 
+}          
 
-/* Remove default margins from headings inside modal */
+/* Modal car image styling */
+.modal-car-image {
+    display: block;
+    margin: 0 auto 10px auto;  
+    object-fit: cover; 
+    aspect-ratio: 3 / 2;       /* width / height ratio */
+   }
+
  
 dialog p {
     margin: 0; 

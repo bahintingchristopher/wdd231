@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
                  
                     
-                    <img src="${car.image}" width="300" loading="lazy" decoding="async">\
+                    <img src="${car.image}" width="300" height="200" loading="lazy" decoding="async">\
                     <h3>${car.make} ${car.model}</h3>
                    
                     <p>${car.description}</p>
