@@ -54,8 +54,11 @@
 
 <main>
 
-
-    <form class="test-drive-form" method="post" action="thankyou.html">
+  <div class="inventory-folder">
+    
+    <!-- Test Drive Form -->
+    <div class="test-drive-form-container">
+      <form class="test-drive-form" method="post" action="thankyou.html">
         <h1>Schedule a Test Drive</h1>
 
         <!-- Customer Info -->
@@ -81,7 +84,7 @@
 
         <!-- Driver Info -->
         <label>
-            Driver’s License Number:
+            Driver's License Number:
             <input type="text" name="licenseNumber" required placeholder="Driver License No.">
         </label>
 
@@ -123,12 +126,23 @@
 
         <!-- Submit Button -->
         <button id="inventory-button" type="submit">Book Test Drive</button>
-    </form>
+      </form>
+    </div>
+
+    <!-- Map -->
+    <div class="map-folder">
+  <h2>Our Location:</h2>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2981.462011411112!2d124.55768827355813!3d11.178417651653255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3307ff61a02291a9%3A0x9554cff6a7d370fa!2sThe%20Church%20of%20Jesus%20Christ%20of%20Latter-day%20Saints!5e1!3m2!1sen!2sph!4v1764598675980!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+
+  </div>
 
 </main>
 
-<script src="scripts/final.js"></script>
-<script src="scripts/inventory.js"></script>
+
+<script src="scripts/final.js" defer></script>
+<script src="scripts/inventory.js" defer></script>
    
       <footer>
        

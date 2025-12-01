@@ -84,4 +84,11 @@
   gap: 20px;
 }
 
+
+/* INVENTORY */
+.nventory-folder {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 }
