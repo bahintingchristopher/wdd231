@@ -51,6 +51,7 @@ font-weight: bold;
 /* for my wayfinding */
 .active-page{
 text-decoration: underline;
+text-decoration-color: var(--background);
 text-underline-offset: 6px;
 font-weight: bold;
 
@@ -60,7 +61,7 @@ font-weight: bold;
 display: flex;
 flex-direction: column;
 list-style: none;
-background-color: var(--accent-CTA);
+background-color: var(--nav);
 gap: 10px;
 margin: 0;
 padding: 0;
@@ -71,14 +72,14 @@ text-decoration: none;
 .navigation ul a {
 text-decoration: none;
 color: var(--mainbody);
-font-weight: bold;
 font-size: 1.2rem;
 padding: 10px;
 display: block;
 }
 
 .navigation ul a:hover {
-color: var(--background);
+color: var(--mainbody);
+background-color: var(--highlights);
 }
 
 .navigation {
@@ -143,17 +144,22 @@ margin: 0 auto;
 
 .cta {
 position: absolute;
-top: 37%;
+top: 30%;
 left: 50%;
+width: 80% ;
 transform: translate(-50%, -50%);
 text-align: center;
 background-color:   #14bceb88;
-padding: 10px;
+padding:  20px;  
 border-radius: 10px;
 }
 
 .cta.nav-open {
 top: 62%; /* adjust depending on nav height */
+}
+
+.cta h1 {
+  font-size: 1rem;
 }
 
 .cta a {

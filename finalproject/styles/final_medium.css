@@ -1,139 +1,162 @@
+:root {
+--background: #DCCDE8;
+--nav: #B37BA4;
+--mainbody: #00100B;
+--highlights: #D99AC5;
+--accent-CTA: #14BDEB;
+
+--font-headings: 'Cormorant Garamond', serif; 
+--font-body: 'Arimo', sans-serif;
+--site-name: 'Caramel', cursive;
+}
+
 @media only screen and (min-width: 38rem) {
 
 .menu-container header {
-    display: flex;
-    flex-direction: row;
-    align-items: left;
-    justify-content: space-between;
-  }
+display: flex;
+flex-direction: row;
+align-items: left;
+justify-content: space-between;
+}
 
 
 
-  header {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;  
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 0 16px;  
-  }
+header {
+display: flex;
+align-items: center;
+justify-content: flex-start;  
+max-width: 100%;
+margin: 0 auto;
+padding: 0 16px;  
+}
 
-  .left-section {
-    display: flex;
-    align-items: center;
-    gap: 10px;  
-  }
+.left-section {
+display: flex;
+align-items: center;
+gap: 10px;  
+}
 
-  .navigation {
-    display: block;
-    margin-left: auto;  
-  }
+.navigation {
+display: block;
+margin-left: auto;  
+}
 
-  .navigation ul {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    background-color: var(--background);
-    gap: 40px;            
-    margin: 0;
-    padding: 0;
-  }
+.navigation ul {
+display: flex;
+flex-direction: row;
+list-style: none;
+background-color: var(--background);
+gap: 40px;            
+margin: 0;
+padding: 0;
+}
 
-  .navigation ul a {
-    text-decoration: none;
-    color: var(--mainbody);
-    font-weight: bold;
-    padding: 10px;
-    display: block;
-    border-bottom: none; 
-    background-color: var(--background);
-  }
+.navigation ul a {
+text-decoration: none;
+color: var(--mainbody);
+padding: 10px;
+display: block;
+border-bottom: none; 
+background-color: var(--background);
+}
 
-  .navigation ul a:hover {
-    color: var(--accent-CTA);
-    }
+.navigation ul a:hover {
+color: var(--accent-CTA);
+background-color: var(--mainbody);
+border-radius: 10px;
+}
 
-  .hamburger {
-    display: none; 
-  }
+.hamburger {
+display: none; 
+}
 
 
-  /* HOME */
+/* HOME */
+.cta {
+width: 40%;
+padding: 20px 10px;
+top: 45%;
+}
+
+
 
 .cta a {
-    font-size: 1.5rem;
- 
+font-size: 1.1rem;
+
 }
 
 .cta a:hover {
-    font-size: 1.6rem;
+font-size: 1.6rem;
 }
 
 
 .featured-cars h2 {
-  text-align: center;
-  margin-bottom: 20px;
-  font-size: 2rem;
+text-align: center;
+margin-bottom: 20px;
+font-size: 2rem;
 
-  
+
 }
 .featured-cars #cars-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  margin-left: 0 auto;
-  gap: 20px;
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+margin-left: 0 auto;
+gap: 20px;
 }
 
 
 /* INVENTORY */
 .nventory-folder {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+display: grid;
+grid-template-columns: 1fr 1fr;
 }
 
 /* THANKYOU PAGE */
 .thankyou-folder {
-  display: flex;
-  text-align: left;
-  font-size: 1.5rem;  
+display: flex;
+text-align: left;
+font-size: 1.5rem;  
 }
 
 .left-thankyou {
-  border: 2px solid var(--mainbody);
-  margin-left: 25px;
-  width: 50%;
+border: 2px solid var(--mainbody);
+margin-left: 25px;
+width: 50%;
 }
 
 .right-thankyou {
-  margin-left: 25px;
-  border: 2px solid var(--mainbody);
-  width: 50%;
-  margin-right: 25px;
+margin-left: 25px;
+border: 2px solid var(--mainbody);
+width: 50%;
+margin-right: 25px;
 }
 
- 
+
 .car-wrapper {
-    position: relative;
-    display: inline-block;
+position: relative;
+display: inline-block;
 }
 
 .headlight {
-    position: absolute;
-    top: 51%;    
-    left: 39%;   
-    width: 80px;
-    height: 20px;
-    background: radial-gradient(circle, rgba(255,255,200,0.8) 0%, rgba(255,255,200,0) 80%);
-    border-radius: 50%;
-    animation: flash 1s infinite alternate;
-    pointer-events: none; /* so it doesn't block clicks */
+position: absolute;
+top: 51%;    
+left: 39%;   
+width: 80px;
+height: 20px;
+background: radial-gradient(circle, rgba(255,255,200,0.8) 0%, rgba(255,255,200,0) 80%);
+border-radius: 50%;
+animation: flash 1s infinite alternate;
+pointer-events: none; /* so it doesn't block clicks */
 }
 
 @keyframes flash {
-    0% { opacity: 0; transform: scale(0.1); }
-    50% { opacity: 2; transform: scale(1.2); }
-    100% { opacity: 0; transform: scale(0.1); }
+0% { opacity: 0; transform: scale(0.1); }
+50% { opacity: 2; transform: scale(1.2); }
+100% { opacity: 0; transform: scale(0.1); }
 }
 
+#results h2 {
+font-style: oblique;
+}
 
 }

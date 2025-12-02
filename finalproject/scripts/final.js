@@ -1,18 +1,8 @@
 
-// for hamburger menu
-const hamburger = document.querySelector('.hamburger');
-const navigation = document.querySelector('.navigation');
-const cta = document.querySelector('.cta');
-
-hamburger.addEventListener('click', () => {
-    navigation.classList.toggle('show'); // show/hide nav
-    hamburger.classList.toggle('show');   // toggle hamburger X icon
-    cta.classList.toggle('nav-open');     // move CTA down
-});
 
 
 //    for car data
-document.addEventListener('DOMContentLoaded', () => {
+    document.addEventListener('DOMContentLoaded', () => {
     const carsContainer = document.getElementById('cars-container');    
 
     if (!carsContainer) {
@@ -20,18 +10,28 @@ document.addEventListener('DOMContentLoaded', () => {
         return; 
     }
 
-    // Fetch car data
-    async function getCars() {
-        try {
-            const response = await fetch("data/cars.json"); 
-            const data = await response.json();
-            displayCars(data.cars);
-        } catch (error) {
-            console.error("Error loading car data:", error);
-        }
+    // Fetch car data and i will only display 3 random cars
+    function getRandomCars(cars, count = 3) {
+    const shuffled = [...cars].sort(() => 0.5 - Math.random());
+    return shuffled.slice(0, count);
     }
 
-    // Display car cards
+
+async function getCars() {
+    try {
+        const response = await fetch("data/cars.json");
+        const data = await response.json();
+
+        // Get 3 random cars
+        const randomCars = getRandomCars(data.cars, 3);
+
+        displayCars(randomCars);
+    } catch (error) {
+        console.error("Error loading car data:", error);
+    }
+}
+
+    // Display car cards and this is part of my DOM manipulation to inject data into HTML.
     function displayCars(cars) {
         carsContainer.innerHTML = ""; // Clear container
 
@@ -39,17 +39,18 @@ document.addEventListener('DOMContentLoaded', () => {
             const card = document.createElement("div");
             card.classList.add("car-container");
 
+            // THIS IS PART OF MY TEMPLATE LITERALS using backticks not single or double quotes.
            card.innerHTML = `
-    <img src="${car.image}" alt="${car.make} ${car.model}" width="300" height="200" loading="lazy" decoding="async">
+          <img src="${car.image}" alt="${car.make} ${car.model}" width="300" height="200" loading="lazy" decoding="async">
 
-    <div class="car-info">
+        <div class="car-info">
         <span class="make"><strong>Make:</strong> ${car.make}</span>
         <span class="model"><strong>Model:</strong> ${car.model}</span>
         <span class="year"><strong>Year:</strong> ${car.year}</span>
+        <span class="price"><strong>Price:</strong> $${car.price.toLocaleString()}</span>
         
         <div class="more-info" style="display: none;">
-                <span class="price"><strong>Price:</strong> $${car.price.toLocaleString()}</span>
-                <span class="mileage"><strong>\nMileage:</strong> ${car.mileage.toLocaleString()} miles</span>
+            <span class="mileage"><strong>\nMileage:</strong> ${car.mileage.toLocaleString()} miles</span>
             <span class="fuel"><strong>Fuel Type:</strong> ${car.fuel}</span>
             <span class="transmission"><strong>Transmission:</strong> ${car.transmission}</span>
             <span class="color"><strong>Color:</strong> ${car.color}</span>
