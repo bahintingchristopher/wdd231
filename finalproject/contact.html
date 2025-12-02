@@ -64,22 +64,18 @@
         <!-- Customer Info -->
         <label>
             Full Name:
-            <input type="text" name="fullName" required placeholder="Your Full Name">
+            <input type="text" name="fullName" required placeholder="Your Full Name" autocomplete="name">
         </label>
-
-        <label>
-            Date of Birth:
-            <input type="date" name="dob" required>
-        </label>
+ 
 
         <label>
             Contact Number:
-            <input type="tel" name="phone" required placeholder="09123456789" pattern="[0-9]{10,11}">
+            <input type="tel" name="phone" required placeholder="09123456789" pattern="[0-9]{10,11}" autocomplete="tel">
         </label>
 
         <label>
             Email Address:
-            <input type="email" name="email" required placeholder="you@example.com">
+            <input type="email" name="email" required placeholder="you@example.com" autocomplete="email">
         </label>
 
         <!-- Driver Info -->
@@ -114,11 +110,7 @@
             <input type="time" name="testDriveTime" required>
         </label>
 
-        <label>
-            Number of Passengers:
-            <input type="text" name="passengers" placeholder="Optional">
-        </label>
-
+        
         <label>
             Special Requests / Notes:
             <textarea name="notes" placeholder="Optional notes or requests"></textarea>
@@ -129,27 +121,35 @@
       </form>
     </div>
 
-    <!-- Map -->
+    <div class="contact-right">
+        <div class="promo-folder">
+        <h2>Ber-Month promo:</h2>
+        <p> Get 20% off on all units! Valid until December 31, 2025</p>
+    </div>
+
     <div class="map-folder">
-  <h2>Our Location:</h2>
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2981.462011411112!2d124.55768827355813!3d11.178417651653255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3307ff61a02291a9%3A0x9554cff6a7d370fa!2sThe%20Church%20of%20Jesus%20Christ%20of%20Latter-day%20Saints!5e1!3m2!1sen!2sph!4v1764598675980!5m2!1sen!2sph"
-   width="600" 
-   height="450" 
-   style="border:0;" 
-   allowfullscreen="" 
-   loading="lazy" 
-   referrerpolicy="no-referrer-when-downgrade">
-  </iframe>
+    <h2>Our Location:</h2>
+   <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2981.462011411112!2d124.55768827355813!3d11.178417651653255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3307ff61a02291a9%3A0x9554cff6a7d370fa!2sThe%20Church%20of%20Jesus%20Christ%20of%20Latter-day%20Saints!5e1!3m2!1sen!2sph!4v1764598675980!5m2!1sen!2sph"
+        width="600" 
+        height="450" 
+        style="border:0;" 
+        allowfullscreen 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Map showing the location of The Church of Jesus Christ of Latter-day Saints">
+    </iframe>
+
 </div>
 
-
+</div>
   </div>
 
 </main>
 
 <script src="scripts/header_footer.js" defer></script>
-<script src="scripts/final.js" defer></script>
-<script src="scripts/inventory.js" defer></script>
+
+
    
       <footer>
        

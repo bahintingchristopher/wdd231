@@ -8,3 +8,8 @@ hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('show');   // toggle hamburger X icon
     cta.classList.toggle('nav-open');     // move CTA down
 });
+
+const currentYearSpan = document.getElementById("currentYear");
+if (currentYearSpan) {
+  currentYearSpan.textContent = new Date().getFullYear();
+}

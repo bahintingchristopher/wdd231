@@ -124,7 +124,7 @@ document.addEventListener('DOMContentLoaded', () => {
                          height="200" 
                          loading="lazy" 
                          decoding="async">
-                    <button class="adv-btn">Advantages</button>
+                    <button class="adv-btn"><strong>HIGHLIGHTS</strong></button>
                 </div>
                 <div class="car-info">
                     <span class="make"><strong>Make:</strong> ${car.make}</span>

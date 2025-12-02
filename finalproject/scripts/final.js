@@ -1,6 +1,4 @@
 
-
-
 //    for car data
     document.addEventListener('DOMContentLoaded', () => {
     const carsContainer = document.getElementById('cars-container');    
