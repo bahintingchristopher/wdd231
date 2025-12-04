@@ -109,7 +109,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Display cars
     function displayCars(cars) {
-        carsContainer.innerHTML = "";
+        carsContainer.innerHTML = "";//clearing container
 
         cars.forEach(car => {
             const card = document.createElement("div"); //injecting elements into HTML
