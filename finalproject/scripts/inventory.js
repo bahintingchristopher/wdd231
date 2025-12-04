@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Instead of fetching, we directly use the imported module
             const cars = carInventory.cars;
             
-            // Optional: simulate delay like a real API
+            // simulate delay like a real API
             await new Promise(resolve => setTimeout(resolve, 300)); //with delay of 300milliseconds
 
             displayCars(cars);
