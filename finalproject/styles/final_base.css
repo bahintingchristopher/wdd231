@@ -147,29 +147,6 @@ color: var(--mainbody);
 }
 
 
-/* HOME */
-/* .hero-box {
-position: relative;
-height: 70vh;  
-background-image: url("../images/hero_image.jpg");
-background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
-}
-
-/* CTA box */
-/* .cta {
-position: absolute;
-top: 40%;
-left: 50%;
-transform: translate(-50%, -50%);
-width: 80%;
-text-align: center;
-align-self: start;
-background-color: #14bceb4f; 
-padding: 20px;
-border-radius: 10px;
-}  */
 
 .hero-box {
 position: relative;
@@ -192,8 +169,6 @@ text-align: center;
 padding: 10px 20px;
 border-radius: 10px;
 }
-
-
 
 
 .cta h1 {

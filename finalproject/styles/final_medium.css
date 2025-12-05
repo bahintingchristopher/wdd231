@@ -86,7 +86,6 @@ display: none;
 
 
 /* HOME */
-
 .hero-box {
 position: relative;
 width: 100%;
@@ -103,7 +102,6 @@ display: block;
 }
 
 
-
 .cta {
 position: absolute;
 width: 70%;
@@ -117,16 +115,10 @@ border-radius: 10px;
 }
 
 
-
-
 .cta h1 {
 font-size: 1.2rem;
 }
 
-
-.cta h1 {
-font-size: 1.2rem;
-}
 
 
 .featured-cars h2 {
