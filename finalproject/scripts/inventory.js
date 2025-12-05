@@ -88,14 +88,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const dialog = document.getElementById('mydialog');
 
     if (!carsContainer || !dialog) {
-        console.error("Required elements missing.");
+        console.error("Required elements missing AND NOT FOUND.");
         return;
     }
 
     // Async function to simulate fetching data (similar to API call)
     async function getCars() {
         try {
-            // Instead of fetching, we directly use the imported module
+            // Instead of fetching via API, we directly use the imported module
             const cars = carInventory.cars;
             
             // simulate delay like a real API
