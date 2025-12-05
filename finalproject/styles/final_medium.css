@@ -86,21 +86,34 @@ display: none;
 
 
 /* HOME */
+.hero-box {
+position: relative;
+height: 80vh;  
+background-image: url("../images/hero_image.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+background-position: top center;  
+}
+
+
+/* CTA box */
 .cta {
-width: 40%;
-padding: 20px 10px;
-top: 45%;
+position: absolute;
+top: 40%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 80%;
+text-align: center;
+background-color: #14bceb4f; 
+padding: 20px;
+border-radius: 10px;
 }
+align-self: auto;
 
 
 
-.cta a {
-font-size: 1.1rem;
-
-}
-
-.cta a:hover {
-font-size: 1.6rem;
+.cta h1 {
+font-size: 1.2rem;
 }
 
 

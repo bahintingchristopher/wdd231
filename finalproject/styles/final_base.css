@@ -147,33 +147,35 @@ color: var(--mainbody);
 }
 
 
-
-/* HOME PAGE */
-.hero-box img {
-max-width: 100%;
-height: auto;
-display: block;
-margin: 0 auto;
+/* HOME */
+.hero-box {
+position: relative;
+height: 70vh;  
+background-image: url("../images/hero_image.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
 }
 
+/* CTA box */
 .cta {
 position: absolute;
-top: 30%;
+top: 40%;
 left: 50%;
-width: 80% ;
 transform: translate(-50%, -50%);
+width: 80%;
 text-align: center;
-background-color:   var(--accent-CTA);
-padding:  20px;  
+align-self: start;
+background-color: #14bceb4f; 
+padding: 20px;
 border-radius: 10px;
 }
 
-.cta.nav-open {
-top: 62%; /* adjust depending on nav height */
-}
+
+
 
 .cta h1 {
-font-size: 1rem;
+font-size: 1.2rem;
 }
 
 .cta a {
@@ -294,7 +296,7 @@ color: var(--background);
 padding-top: 20px;
 text-align: center;
 margin: 20px 0;
-font-size: 1.5rem;
+font-size: 1rem;
 }
 
 .inventory-cta a {
@@ -302,12 +304,12 @@ background-color: var(--accent-CTA);
 color: var(--mainbody);
 padding: 10px 20px;
 border-radius: 10px;
+font-size: 1.2rem;
 }
 
 .inventory-cta a:hover {
 background-color: var(--highlights);
 color: var(--mainbody);
-font-size: 1.6rem;
 }
 
 
@@ -487,7 +489,7 @@ margin: 20px 10px;
 
 .test-drive-form-container,
 .map-folder {
-flex: 1 1 400px; /* grow/shrink with min width */
+flex: 1 1 400px; 
 max-width: 500px;
 }
 
@@ -512,22 +514,22 @@ animation: pulseBg 1s ease-in-out infinite;
 
 .map-folder {
 display: flex;
-flex-direction: column; /* stack heading and map vertically */
-align-items: center;    /* center horizontally */
-margin-top: 3rem;       /* spacing from above content */
-gap: 1rem;              /* space between heading and map */
+flex-direction: column;  
+align-items: center;     
+margin-top: 3rem;       
+gap: 1rem;              
 background-color: var(--highlights);
 }
 
 .map-folder h2 {
 font-size: 1.8rem;
 text-align: center;
-color: var(--mainbody); /* optional: match your theme */
+color: var(--mainbody); 
 }
 
 .map-folder iframe {
-width: 100%;            /* responsive */
-max-width: 600px;       /* limit width on large screens */
+width: 100%;            
+max-width: 600px;       
 height: 400px;
 border: 0;
 border-radius: 10px;
@@ -569,7 +571,7 @@ height: 20px;
 background: radial-gradient(circle, rgba(255,255,200,0.8) 0%, rgba(255,255,200,0) 80%);
 border-radius: 50%;
 /* animation: flash 1s infinite alternate; */
-  
+
 }
 
 /* @keyframes flash {
@@ -595,6 +597,6 @@ list-style: none;
 }
 
 .youtube ul li a:hover {
-  background-color: var(--background);
-  padding: 10px;
+background-color: var(--background);
+padding: 10px;
 }
