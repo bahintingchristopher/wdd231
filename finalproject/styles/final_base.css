@@ -13,14 +13,17 @@
 
 body {
 background-color: var(--background);
+font-family: var(--font-body);
 }
 
 h1, h2, h3, h4, h5, h6 {
-color: var(--font-headings);
+font-family: var(--font-headings);
 }
 
 html, body, p, li, a, span, button {
 color: var(--mainbody); 
+font-family: var(--font-body);
+
 }
 
 
