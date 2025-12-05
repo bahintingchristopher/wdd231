@@ -10,6 +10,21 @@
 --site-name: 'Caramel', cursive;
 }
 
+body {
+background-color: var(--background);
+}
+
+h1, h2, h3, h4, h5, h6 {
+color: var(--font-headings);
+}
+
+html, body, p, li, a, span, button {
+color: var(--mainbody); 
+}
+
+
+
+
 @media only screen and (min-width: 38rem) {
 
 .menu-container header {

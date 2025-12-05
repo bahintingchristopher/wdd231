@@ -19,7 +19,7 @@ h1, h2, h3, h4, h5, h6 {
 color: var(--font-headings);
 }
 
-body, p, li, a, span {
+html, body, p, li, a, span, button {
 color: var(--mainbody); 
 }
 
@@ -121,7 +121,7 @@ content: "\00D7";
 footer {
 text-align: center;
 padding: 20px;
-background-color: var(--nav);
+background-color: var(--background);
 color: var(--mainbody);
 margin-top: 30px;
 }
@@ -137,6 +137,10 @@ margin-top: 10px;
 width: 32px;
 height: 32px;
 padding: 10px;
+}
+
+.author p {
+   color: var(--mainbody);
 }
 
 
@@ -156,7 +160,7 @@ left: 50%;
 width: 80% ;
 transform: translate(-50%, -50%);
 text-align: center;
-background-color:   #14bceb88;
+background-color:   var(--accent-CTA);
 padding:  20px;  
 border-radius: 10px;
 }
@@ -172,24 +176,24 @@ top: 62%; /* adjust depending on nav height */
 .cta a {
 margin-top: 15px; 
 display: inline-block;  
-background-color: var(--nav);
+background-color: var(--background);
 color: var(--mainbody);
 padding:  10px 20px;
 font-size: 1rem;
 border-radius: 10px;
-animation: pulseBg 1s ease-in-out infinite;
+ animation: pulseBg 1s ease-in-out infinite; 
 }
 
-@keyframes pulseBg {
+ @keyframes pulseBg {
  
   0% { background-color: var(--mainbody); }
   75% { background-color: var(--mainbody); }
  
 }
-
+ 
 
 .cta a:hover {
-background-color: var(--highlights);
+background-color: var(--background);
 color: var(--mainbody);
 font-size: 1rem;
 }
@@ -383,15 +387,13 @@ border: none;
 border-radius: 8px;
 padding: 8px 16px;
 cursor: pointer;
-animation: pulseBg 1s ease-in-out infinite;
+ animation: pulseBg 1s ease-in-out infinite; 
 }
 
-@keyframes pulseBg {
+ @keyframes pulseBg {
   0% { background-color: var(--highlights); }
   50% { background-color: var(--highlights); }
-  75% { background-color: var(--mainbody); }
-  100% { background-color: var(--accent-CTA); }
-}
+} 
 
 dialog::backdrop {
 background-color: rgba(0, 0, 0, 0.8);  
@@ -403,7 +405,6 @@ background-color: rgba(0, 0, 0, 0.8);
 background-color: var(--background);
 padding: 30px 40px;
 border-radius: 10px;
- 
 max-width: 500px;
 width: 80%;
 }
@@ -460,7 +461,7 @@ width: 100%;
 padding: 12px;
 border: none;
 border-radius: 6px;
-background-color: var(--nav);
+background-color: var(--accent-CTA);
 color: var(--mainbody);
 font-size: 16px;
 font-weight: bold;
@@ -498,15 +499,13 @@ transform: translateY(-2px);
   background-color: var(--accent-CTA);
   border-radius: 10px;
   text-align: center;
-  animation: pulseBg 1s ease-in-out infinite;
+   animation: pulseBg 1s ease-in-out infinite; 
 }
 
-@keyframes pulseBg {
-  0% { background-color: var(--highlights); }
+ @keyframes pulseBg {
+  0% { background-color: var(--accent-CTA); }
   50% { background-color: var(--highlights); }
-  75% { background-color: var(--mainbody); }
-  100% { background-color: var(--accent-CTA); }
-}
+} 
 
 .map-folder {
   display: flex;
@@ -566,13 +565,13 @@ transform: translateY(-2px);
     height: 20px;
     background: radial-gradient(circle, rgba(255,255,200,0.8) 0%, rgba(255,255,200,0) 80%);
     border-radius: 50%;
-    animation: flash 1s infinite alternate;
+    /* animation: flash 1s infinite alternate; */
      
 }
 
-@keyframes flash {
+/* @keyframes flash {
     0% { opacity: 0; transform: scale(0.1); }
     50% { opacity: 2; transform: scale(1.2); }
     100% { opacity: 0; transform: scale(0.1); }
 }
-
+ */
