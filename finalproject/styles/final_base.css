@@ -579,10 +579,18 @@ border-radius: 50%;
 */
 
 
+/* DISCLAIMER */
+.attributions  {
+    border-top: 2px solid var(--mainbody);
+    border-bottom: 2px solid var(--mainbody); ;
+}
+
+
 /* VIDEO RECORDING */
 .youtube {
 background-color: var(--accent-CTA);
 padding: 10px 20px;
+margin-top: 10px;
 }
 
 .youtube ul li {
